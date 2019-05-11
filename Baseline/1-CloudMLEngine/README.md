@@ -45,12 +45,12 @@ To complete this lab, you need:
 
 ### How to start your lab and sign in to the Console
 
-1. Click the **Start Lab** button. If you need to pay for the lab, a pop-up opens for you to select your payment method. On the left you will see a panel populated with the temporary credentials that you must use for this lab.
-    ![](../../res/1.png)
-2. Copy the username, and then click **Open Google Console**. The lab spins up resources, and then opens another tab that shows the **Choose an account page**.
+1. Click the `Start Lab` button. If you need to pay for the lab, a pop-up opens for you to select your payment method. On the left you will see a panel populated with the temporary credentials that you must use for this lab.
+    ![](../../res/Baseline-1-1.png)
+2. Copy the username, and then click `Open Google Console`. The lab spins up resources, and then opens another tab that shows the `Choose an account page`.
     * **Tip:** Open the tabs in separate windows, side-by-side.
-3. On the Choose an account page, click **Use Another Account**.
-    ![](../../res/2.png)
+3. On the Choose an account page, click `Use Another Account`.
+    ![](../../res/Baseline-1-2.png)
 4. The Sign in page opens. Paste the username that you copied from the Connection Details panel. Then copy and paste the password.
    * **Important:** You must use the credentials from the Connection Details panel. Do not use your Qwiklabs credentials. If you have your own GCP account, do not use it for this lab (avoids incurring charges).
 5. Click through the subsequent pages:
@@ -59,20 +59,20 @@ To complete this lab, you need:
     3. Do not sign up for free trials.
     * After a few moments, the GCP console opens in this tab.
         * **Note:** You can view the menu with a list of GCP Products and Services by clicking the Navigation menu at the top-left, next to “Google Cloud Platform”.
-            ![](../../res/3.png)
+            ![](../../res/Baseline-1-3.png)
 
 ### Activate Google Cloud Shell
 
 Google Cloud Shell is a virtual machine that is loaded with development tools. It offers a persistent 5GB home directory and runs on the Google Cloud. Google Cloud Shell provides command-line access to your GCP resources.
 
 1. In GCP console, on the top right toolbar, click the Open Cloud Shell button.
-    ![](../../res/4.png)
-2. In the dialog box that opens, click **START CLOUD SHELL**:
-    ![](../../res/5.png)
-    * You can click "START CLOUD SHELL" immediately when the dialog box opens.
+    ![](../../res/Baseline-1-4.png)
+2. In the dialog box that opens, click `START CLOUD SHELL`:
+    ![](../../res/Baseline-1-5.png)
+    * You can click `START CLOUD SHELL` immediately when the dialog box opens.
     * It takes a few moments to provision and connect to the environment. When you are connected, you are already authenticated, and the project is set to your `PROJECT_ID`. For example:
-        ![](../../res/6.png)
-    * **gcloud** is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell and supports tab-completion.
+        ![](../../res/Baseline-1-6.png)
+    * `gcloud` is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell and supports tab-completion.
     * You can list the active account name with this command:
         ```bash
         $ gcloud auth list
@@ -205,9 +205,9 @@ Follow the steps below to launch TensorBoard and point it at the summary logs pr
     ```bash
     $ tensorboard --logdir=$MODEL_DIR --port=8080
     ```
-2. Click on the **Web Preview** icon, then **Preview on port 8080**. A new tab will open with TensorBoard running.
-    ![](../../res/7.png)
-3. Click on **Accuracy** to see graphical representations of how accuracy changes as your job progresses.
+2. Click on the `Web Preview` icon, then `Preview on port 8080`. A new tab will open with TensorBoard running.
+    ![](../../res/Baseline-1-7.png)
+3. Click on `Accuracy` to see graphical representations of how accuracy changes as your job progresses.
 4. Type `CTRL+C` in Cloud Shell to shut down TensorBoard.
 
 ### Running model prediction locally (in Cloud Shell)
@@ -249,10 +249,10 @@ The Cloud ML Engine services need to access [Google Cloud Storage (GCS)](https:/
 
 1. Set the following variables:
     ```bash
-    PROJECT_ID=$(gcloud config list project --format "value(core.project)")
-    BUCKET_NAME=${PROJECT_ID}-mlengine
-    echo $BUCKET_NAME
-    REGION=us-central1
+    $ PROJECT_ID=$(gcloud config list project --format "value(core.project)")
+    $ BUCKET_NAME=${PROJECT_ID}-mlengine
+    $ echo $BUCKET_NAME
+    $ REGION=us-central1
     ```
 2. Create the new bucket:
     ```bash
@@ -265,8 +265,8 @@ The Cloud ML Engine services need to access [Google Cloud Storage (GCS)](https:/
         ```
     2. Set the `TRAIN_DATA` and `EVAL_DATA` variables to point to the files:
         ```bash
-        TRAIN_DATA=gs://$BUCKET_NAME/data/adult.data.csv
-        EVAL_DATA=gs://$BUCKET_NAME/data/adult.test.csv
+        $ TRAIN_DATA=gs://$BUCKET_NAME/data/adult.data.csv
+        $ EVAL_DATA=gs://$BUCKET_NAME/data/adult.test.csv
         ```
     3. Use `gsutil` again to copy the JSON test file `test.jso`n` to your Cloud Storage bucket:
         ```bash
@@ -274,7 +274,7 @@ The Cloud ML Engine services need to access [Google Cloud Storage (GCS)](https:/
         ```
     4. Set the `TEST_JSON` variable to point to that file:
         ```bash
-        TEST_JSON=gs://$BUCKET_NAME/data/test.json
+        $ TEST_JSON=gs://$BUCKET_NAME/data/test.json
         ```
 
 ---
@@ -286,11 +286,11 @@ Use the default BASIC scale tier to run a single-instance training job. The init
 
 1. Select a name for the initial training run that distinguishes it from any subsequent training runs. For example, you can append a number to represent the iteration:
     ```bash
-    JOB_NAME=census_single_1
+    $ JOB_NAME=census_single_1
     ```
 2. Specify a directory for output generated by Cloud ML Engine by setting an `OUTPUT_PATH` variable to include when requesting training and prediction jobs. The `OUTPUT_PATH` represents the fully qualified Cloud Storage location for model checkpoints, summaries, and exports. You can use the `BUCKET_NAME` variable you defined in a previous step. It's a good practice to use the job name as the output directory:
     ```bash
-    OUTPUT_PATH=gs://$BUCKET_NAME/$JOB_NAME
+    $ OUTPUT_PATH=gs://$BUCKET_NAME/$JOB_NAME
     ```
 3. Run the following command to submit a training job in the cloud that uses a single process. This time, set the `--verbosity` tag to `DEBUG` so that you can inspect the full logging output and retrieve accuracy, loss, and other metrics. The output also contains a number of other warning messages that you can ignore for the purposes of this sample:
     ```bash
@@ -336,11 +336,11 @@ Use the default BASIC scale tier to run a single-instance training job. The init
 
 By deploying your trained model to Cloud ML Engine to serve online prediction requests, you get the benefit of scalable serving. This is useful if you expect your trained model to be hit with many prediction requests in a short period of time.
 
-Wait until your CMLE training job is done. It is finished when you see a green check mark by the jobname in the Cloud Console, or when you see the message **Job completed successfully** in the Cloud Shell command line.
+Wait until your CMLE training job is done. It is finished when you see a green check mark by the jobname in the Cloud Console, or when you see the message `Job completed successfully` in the Cloud Shell command line.
 
 1. Create a Cloud ML Engine model:
     ```bash
-    MODEL_NAME=census
+    $ MODEL_NAME=census
     ```
 2. Create a Cloud ML Engine model:
     ```bash
@@ -352,7 +352,7 @@ Wait until your CMLE training job is done. It is finished when you see a green c
     ```
 4. Scroll through the output to find the value of `$OUTPUT_PATH/export/census/<timestamp>/`. Copy timestamp and add it to the following command to set the environment variable `MODEL_BINARIES` to its value:
     ```bash
-    MODEL_BINARIES=$OUTPUT_PATH/export/census/<timestamp>/
+    $ MODEL_BINARIES=$OUTPUT_PATH/export/census/<timestamp>/
     ```
     * **Note:** The timestamp for this training run will not be the same as the timestamp generated during your local training run above. Be sure to scroll through the gsutil ls output to find this new timestamp.
 5. You'll deploy this trained model.
@@ -390,8 +390,8 @@ Wait until your CMLE training job is done. It is finished when you see a green c
 
 Below are a multiple choice questions to reinforce your understanding of this lab's concepts. Answer them to the best of your abilities.
 
-1. (T/F) A model version is an instance of a machine learning solution stored in the Cloud ML Engine model service.
-2. (T/F) Cloud ML Engine offers training jobs and batch prediction jobs.
+1. T: (T/F) A model version is an instance of a machine learning solution stored in the Cloud ML Engine model service.
+2. T: (T/F) Cloud ML Engine offers training jobs and batch prediction jobs.
 
 ---
 ## Congratulations!
