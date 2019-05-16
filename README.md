@@ -1,6 +1,6 @@
 # Google Cloud Study Jams 2019
 
-![](res/studyjams.png)
+![](res/img/studyjams.png)
 
 ---
 ## Contents
