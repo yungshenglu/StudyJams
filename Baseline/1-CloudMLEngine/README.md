@@ -46,11 +46,11 @@ To complete this lab, you need:
 ### How to start your lab and sign in to the Console
 
 1. Click the `Start Lab` button. If you need to pay for the lab, a pop-up opens for you to select your payment method. On the left you will see a panel populated with the temporary credentials that you must use for this lab.
-    ![](../../res/Baseline-1-1.png)
+    ![](../../res/img/setup/Setup-1.png)
 2. Copy the username, and then click `Open Google Console`. The lab spins up resources, and then opens another tab that shows the `Choose an account page`.
     * **Tip:** Open the tabs in separate windows, side-by-side.
 3. On the Choose an account page, click `Use Another Account`.
-    ![](../../res/Baseline-1-2.png)
+    ![](../../res/img/setup/Setup-2.png)
 4. The Sign in page opens. Paste the username that you copied from the Connection Details panel. Then copy and paste the password.
    * **Important:** You must use the credentials from the Connection Details panel. Do not use your Qwiklabs credentials. If you have your own GCP account, do not use it for this lab (avoids incurring charges).
 5. Click through the subsequent pages:
@@ -59,19 +59,19 @@ To complete this lab, you need:
     3. Do not sign up for free trials.
     * After a few moments, the GCP console opens in this tab.
         * **Note:** You can view the menu with a list of GCP Products and Services by clicking the Navigation menu at the top-left, next to “Google Cloud Platform”.
-            ![](../../res/Baseline-1-3.png)
+            ![](../../res/img/setup/Setup-3.png)
 
 ### Activate Google Cloud Shell
 
 Google Cloud Shell is a virtual machine that is loaded with development tools. It offers a persistent 5GB home directory and runs on the Google Cloud. Google Cloud Shell provides command-line access to your GCP resources.
 
 1. In GCP console, on the top right toolbar, click the Open Cloud Shell button.
-    ![](../../res/Baseline-1-4.png)
+    ![](../../res/img/setup/Setup-4.png)
 2. In the dialog box that opens, click `START CLOUD SHELL`:
-    ![](../../res/Baseline-1-5.png)
+    ![](../../res/img/setup/Setup-5.png)
     * You can click `START CLOUD SHELL` immediately when the dialog box opens.
     * It takes a few moments to provision and connect to the environment. When you are connected, you are already authenticated, and the project is set to your `PROJECT_ID`. For example:
-        ![](../../res/Baseline-1-6.png)
+        ![](../../res/img/setup/Setup-6.png)
     * `gcloud` is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell and supports tab-completion.
     * You can list the active account name with this command:
         ```bash
@@ -206,7 +206,7 @@ Follow the steps below to launch TensorBoard and point it at the summary logs pr
     $ tensorboard --logdir=$MODEL_DIR --port=8080
     ```
 2. Click on the `Web Preview` icon, then `Preview on port 8080`. A new tab will open with TensorBoard running.
-    ![](../../res/Baseline-1-7.png)
+    ![](../../res/img/Baseline/Baseline-1-1.png)
 3. Click on `Accuracy` to see graphical representations of how accuracy changes as your job progresses.
 4. Type `CTRL+C` in Cloud Shell to shut down TensorBoard.
 

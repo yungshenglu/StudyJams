@@ -2,7 +2,7 @@
 
 ## GSP192
 
-![](../../res/img/Baseline-3-1.png)
+![](../../res/img/selfplacedlabs.png)
 
 In this lab, you will learn how to create a streaming pipeline using one of [Google's Cloud Dataflow templates](https://cloud.google.com/dataflow/docs/templates/provided-templates). More specifically, you will use the Cloud Pub/Sub to BigQuery template, which reads messages written in JSON from a Pub/Sub topic and pushes them to a BigQuery table. You can find the documentation for this template here.
 
@@ -28,11 +28,11 @@ To complete this lab, you need:
 ### How to start your lab and sign in to the Console
 
 1. Click the `Start Lab` button. If you need to pay for the lab, a pop-up opens for you to select your payment method. On the left you will see a panel populated with the temporary credentials that you must use for this lab.
-    ![](../../res/img/Baseline-3-2.png)
+    ![](../../res/img/Setup/Setup-1.png)
 2. Copy the username, and then click `Open Google Console`. The lab spins up resources, and then opens another tab that shows the **Choose an account** page.
     * **Tip:** Open the tabs in separate windows, side-by-side.
 3. On the Choose an account page, click `Use Another Account`.
-    ![](../../res/img/Baseline-3-3.png)
+    ![](../../res/img/Setup/Setup-2.png)
 4. The Sign in page opens. Paste the username that you copied from the Connection Details panel. Then copy and paste the password.
     * **Important:** You must use the credentials from the Connection Details panel. Do not use your Qwiklabs credentials. If you have your own GCP account, do not use it for this lab (avoids incurring charges).
 5. Click through the subsequent pages:
@@ -41,7 +41,7 @@ To complete this lab, you need:
     * Do not sign up for free trials.
 6. After a few moments, the GCP console opens in this tab.
     * **Note:** You can view the menu with a list of GCP Products and Services by clicking the Navigation menu at the top-left, next to “Google Cloud Platform”.
-    ![](../../res/img/Baseline-3-4.png)
+    ![](../../res/img/Setup/Setup-3.png)
 
 ---
 ## Activate Google Cloud Shell
@@ -49,12 +49,12 @@ To complete this lab, you need:
 Google Cloud Shell is a virtual machine that is loaded with development tools. It offers a persistent 5GB home directory and runs on the Google Cloud. Google Cloud Shell provides command-line access to your GCP resources.
 
 1. In GCP console, on the top right toolbar, click the `Open Cloud Shell` button.
-    ![](../../res/img/Baseline-3-5.png)
+    ![](../../res/img/Setup/Setup-4.png)
 2. In the dialog box that opens, click `START CLOUD SHELL`:
-    ![](../../res/img/Baseline-3-6.png)
+    ![](../../res/img/Setup/Setup-5.png)
     * **Note:** You can click `START CLOUD SHELL` immediately when the dialog box opens.
 3. It takes a few moments to provision and connect to the environment. When you are connected, you are already authenticated, and the project is set to your `PROJECT_ID`. For example:
-    ![](../../res/img/Baseline-3-7.png)
+    ![](../../res/img/Setup/Setup-6.png)
     * `gcloud` is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell and supports tab-completion.
         * You can list the active account name with this command:
             ```bash
@@ -121,7 +121,7 @@ Let's first create a BigQuery dataset and table.
 
 1. From the left-hand menu, in the Big Data section, click on `BigQuery`.
 2. Click on your project name in the left-hand navigation, then click `CREATE DATASET` on the right-hand side of the console. Input `taxirides` as your dataset ID:
-    ![](../../res/img/Baseline-3-8.png)
+    ![](../../res/img/Baseline/Baseline-3-1.png)
 3. Leave all of the other default settings in place and click `Create dataset`.
 4. You should now see the taxirides dataset underneath your project ID in the left-hand console—click on it and then select `CREATE TABLE` in the right-hand side of the console.
 5. In the **Destination table** input, enter `realtime`.
@@ -131,13 +131,13 @@ Let's first create a BigQuery dataset and table.
   meter_reading:float,meter_increment:float,ride_status:string,passenger_count:integer
   ```
 7. Your console should look like the following:
-    ![](../../res/img/Baseline-3-9.png)
+    ![](../../res/img/Baseline/Baseline-3-2.png)
 8. Now, click `Create table`.
 
 ### Create a storage bucket
 
 1. Go back to the GCP Console and navigate to `Storage > Browser > Create bucket`:
-    ![](../../res/img/Baseline-3-10.png)
+    ![](../../res/img/Baseline/Baseline-3-3.png)
 2. Give your bucket a unique name. Leave all other default settings, then click `Create`.
 
 ---
@@ -159,12 +159,12 @@ Let's first create a BigQuery dataset and table.
     ```bash
     gs://Your_Bucket_Name/temp
     ```
-    ![](../../res/img/Baseline-3-11.png)
+    ![](../../res/img/Baseline/Baseline-3-4.png)
 8. Click the `Run job` button.
     * You'll watch your resources build and become ready for use.
 9. Now, let's go view the data written to BigQuery by clicking on `BigQuery` found in the Navigation menu.
 10. When the BigQuery UI opens, you'll see the `taxirides` table added under your project name and `realtime` underneath that:
-    ![](../../res/img/Baseline-3-12.png)
+    ![](../../res/img/Baseline/Baseline-3-5.png)
 
 ---
 ## Submit a query
@@ -178,7 +178,7 @@ You can submit queries using standard SQL.
 2. Now click `Run Query`.
     * If you run into any issues or errors, run the query again (the pipeline takes a minute to start up.)
 3. When the query runs successfully, you'll see the output in the `Query Results` panel as shown below:
-    ![](../../res/img/Baseline-3-13.png)
+    ![](../../res/img/Baseline/Baseline-3-6.png)
 4. Great work! You just pulled 1000 taxi rides from a Pub/Sub topic and pushed them to a BigQuery table. As you saw firsthand, templates are a practical, easy-to-use way to run Dataflow jobs. Be sure to check out some other Google Templates [here](https://cloud.google.com/dataflow/docs/templates/provided-templates).
 
 ---

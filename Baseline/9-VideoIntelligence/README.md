@@ -2,7 +2,7 @@
 
 ## GSP154
 
-![](../../res/img/Baseline-9-1.png)
+![](../../res/img/selfplacedlabs.png)
 
 Google Cloud Video Intelligence makes videos searchable and discoverable by extracting metadata with an easy to use REST API. You can now search every moment of every video file in your catalog. It quickly annotates videos stored in [Google Cloud Storage](https://cloud.google.com/storage/), and helps you identify key entities (nouns) within your video; and when they occur within the video. Separate signal from noise by retrieving relevant information within the entire video, shot-by-shot, -or per frame.
 
@@ -26,11 +26,11 @@ To complete this lab, you need:
 ### How to start your lab and sign in to the Console
 
 1. Click the `Start Lab` button. If you need to pay for the lab, a pop-up opens for you to select your payment method. On the left you will see a panel populated with the temporary credentials that you must use for this lab.
-    ![](../../res/img/Baseline-9-2.png)
+    ![](../../res/img/Setup/Setup-1.png)
 2. Copy the username, and then click `Open Google Console`. The lab spins up resources, and then opens another tab that shows the `Choose an account` page.
     * **Tip:** Open the tabs in separate windows, side-by-side.
 3. On the Choose an account page, click `Use Another Account`.
-    ![](../../res/img/Baseline-9-3.png)
+    ![](../../res/img/Setup/Setup-2.png)
 4. The Sign in page opens. Paste the username that you copied from the Connection Details panel. Then copy and paste the password.
     * **Important:** You must use the credentials from the Connection Details panel. Do not use your Qwiklabs credentials. If you have your own GCP account, do not use it for this lab (avoids incurring charges).
 5. Click through the subsequent pages:
@@ -39,19 +39,19 @@ To complete this lab, you need:
     * Do not sign up for free trials.
 6. After a few moments, the GCP console opens in this tab.
     * * **Note:** You can view the menu with a list of GCP Products and Services by clicking the Navigation menu at the top-left, next to “Google Cloud Platform”.
-    ![](../../res/img/Baseline-9-4.png)
+    ![](../../res/img/Setup/Setup-3.png)
 
 ### Activate Google Cloud Shell
 
 Google Cloud Shell is a virtual machine that is loaded with development tools. It offers a persistent 5GB home directory and runs on the Google Cloud. Google Cloud Shell provides command-line access to your GCP resources.
 
 1. In GCP console, on the top right toolbar, click the `Open Cloud Shell` button.
-    ![](../../res/img/Baseline-9-5.png)
+    ![](../../res/img/Setup/Setup-4.png)
 2. In the dialog box that opens, click `START CLOUD SHELL`:
-    ![](../../res/img/Baseline-9-6.png)
+    ![](../../res/img/Setup/Setup-5.png)
     * You can click `START CLOUD SHELL` immediately when the dialog box opens.
 3. It takes a few moments to provision and connect to the environment. When you are connected, you are already authenticated, and the project is set to your `PROJECT_ID`. For example:
-    ![](../../res/img/Baseline-9-7.png)
+    ![](../../res/img/Setup/Setup-6.png)
     * `gcloud` is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell and supports tab-completion.
         * You can list the active account name with this command:
             ```bash
@@ -79,7 +79,7 @@ Google Cloud Shell is a virtual machine that is loaded with development tools. I
 ## Enable the Video Intelligence API
 
 1. For this lab the Cloud Video Intelligence API should be enabled so you can use it right away. In the left-hand navigation menu, select `APIs & Services > Library`:
-    ![](../../res/img/Baseline-9-8.png)
+    ![](../../res/img/Baseline/Baseline-9-1.png)
 2. Then search for `video`.
 3. Click on the `Cloud Video Intelligence API` in the results that are returned, then click `Enable` if it is not enabled.
 

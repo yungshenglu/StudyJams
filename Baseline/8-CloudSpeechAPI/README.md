@@ -2,7 +2,7 @@
 
 ## GSP119
 
-![](../../res/img/Baseline-8-1.png)
+![](../../res/img/selfplacedlabs.png)
 
 The Google Cloud Speech API enables easy integration of Google speech recognition technologies into developer applications. The Speech API allows you to send audio and receive a text transcription from the service (see [What is the Google Cloud Speech API?](https://cloud.google.com/speech/docs/) for more information).
 
@@ -32,11 +32,11 @@ To complete this lab, you need:
 ### How to start your lab and sign in to the Console
 
 1. Click the `Start Lab` button. If you need to pay for the lab, a pop-up opens for you to select your payment method. On the left you will see a panel populated with the temporary credentials that you must use for this lab.
-    ![](../../res/img/Baseline-8-2.png)
+    ![](../../res/img/Setup/Setup-1.png)
 2. Copy the username, and then click `Open Google Console`. The lab spins up resources, and then opens another tab that shows the `Choose an account` page.
     * **Tip:** Open the tabs in separate windows, side-by-side.
 3. On the Choose an account page, click `Use Another Account`.
-    ![](../../res/img/Baseline-8-3.png)
+    ![](../../res/img/Setup/Setup-2.png)
 4. The Sign in page opens. Paste the username that you copied from the Connection Details panel. Then copy and paste the password.
     * **Important:** You must use the credentials from the Connection Details panel. Do not use your Qwiklabs credentials. If you have your own GCP account, do not use it for this lab (avoids incurring charges).
 5. Click through the subsequent pages:
@@ -45,19 +45,19 @@ To complete this lab, you need:
     * Do not sign up for free trials.
 6. After a few moments, the GCP console opens in this tab.
     * * **Note:** You can view the menu with a list of GCP Products and Services by clicking the Navigation menu at the top-left, next to “Google Cloud Platform”.
-    ![](../../res/img/Baseline-8-4.png)
+    ![](../../res/img/Setup/Setup-3.png)
 
 ### Activate Google Cloud Shell
 
 Google Cloud Shell is a virtual machine that is loaded with development tools. It offers a persistent 5GB home directory and runs on the Google Cloud. Google Cloud Shell provides command-line access to your GCP resources.
 
 1. In GCP console, on the top right toolbar, click the `Open Cloud Shell` button.
-    ![](../../res/img/Baseline-8-5.png)
+    ![](../../res/img/Setup/Setup-4.png)
 2. In the dialog box that opens, click `START CLOUD SHELL`:
-    ![](../../res/img/Baseline-8-6.png)
+    ![](../../res/img/Setup/Setup-5.png)
     * You can click `START CLOUD SHELL` immediately when the dialog box opens.
 3. It takes a few moments to provision and connect to the environment. When you are connected, you are already authenticated, and the project is set to your `PROJECT_ID`. For example:
-    ![](../../res/img/Baseline-8-7.png)
+    ![](../../res/img/Setup/Setup-6.png)
     * `gcloud` is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell and supports tab-completion.
         * You can list the active account name with this command:
             ```bash
@@ -87,11 +87,11 @@ Google Cloud Shell is a virtual machine that is loaded with development tools. I
 Since you'll be using `curl` to send a request to the Speech API, you'll need to generate an API key to pass in our request URL.
 
 1. To create an API key, click `Navigation menu > APIs & services > Credentials`:
-    ![](../../res/img/Baseline-8-8.png)
+    ![](../../res/img/Baseline/Baseline-8-1.png)
 2. Then click `Create credentials`:
-    ![](../../res/img/Baseline-8-9.png)
+    ![](../../res/img/Baseline/Baseline-8-2.png)
 3. In the drop down menu, select `API key`:
-    ![](../../res/img/Baseline-8-10.png)
+    ![](../../res/img/Baseline/Baseline-8-3.png)
 4. Copy the key you just generated.
 5. Now that you have an API key, save it to an environment variable to avoid having to insert the value of your API key in each request. You can do this in Cloud Shell command line. In the following command, be sure to replace `<YOUR_API_KEY>` with the key you just copied.
     ```bash
