@@ -158,7 +158,7 @@ The Datastore, Storage, and Vision APIs are automatically enabled for you in thi
     ```
 3. Use `pip` to install dependencies for your project from the `requirements.txt` file:
     ```bash
-    $ pip install -r requirements.txt
+    (env)$ pip install -r requirements.txt
     ```
     * The `requirements.txt` file is a list of package dependencies you need for your project. The above command downloaded all of these listed package dependencies to the virtualenv.
 
@@ -166,7 +166,7 @@ The Datastore, Storage, and Vision APIs are automatically enabled for you in thi
 
 1. Next, create an App Engine instance by using:
     ```bash
-    $ gcloud app create
+    (env)$ gcloud app create
     ```
 2. A prompt will display a list of regions. Select a Region that supports App Engine Flexible for Python then press `ENTER`. You can read more about [Regions and Zones](https://cloud.google.com/docs/geography-and-regions).
 
@@ -174,7 +174,7 @@ The Datastore, Storage, and Vision APIs are automatically enabled for you in thi
 
 1. First, set the environment variable `CLOUD_STORAGE_BUCKET` equal to the name of your `PROJECT_ID`. (It is generally recommended to name your bucket the same as your `PROJECT_ID` for convenience purposes).
     ```bash
-    $ export CLOUD_STORAGE_BUCKET=${PROJECT_ID}
+    (env)$ export CLOUD_STORAGE_BUCKET=${PROJECT_ID}
     ```
 2. Now run the following command to create a bucket with the same name as your `PROJECT_ID`.
     ```bash
@@ -185,7 +185,7 @@ The Datastore, Storage, and Vision APIs are automatically enabled for you in thi
 
 1. Execute the following command to start your application:
     ```bash
-    $ python main.py
+    (env)$ python main.py
     ```
 2. Once the application starts, click on the `Web Preview` icon in the Cloud Shell toolbar and choose `"Preview on port 8080."`
     ![](../../res/img/DeployApplications/DeployApplications-1-1.png)
@@ -315,7 +315,7 @@ App Engine Flexible uses a file called app.yaml to describe an application's dep
 
 1. Next, you will modify app.yaml using an editor of your choice `vim`, `nano`, or `emacs`. We will use the nano editor:
     ```bash
-    $ nano app.yaml
+    (env)$ nano app.yaml
     ```
 2. Once you have `app.yaml` open, replace `<your-cloud-storage-bucket>` with the name of your Cloud Storage bucket. (If you forgot the name of your Cloud Storage bucket, copy the GCP Project ID from the Qwiklabs tab). The `env_variables` section sets up environment variables that will be used in `main.py` once the application is deployed.
     ```yaml
@@ -336,7 +336,7 @@ App Engine Flexible uses a file called app.yaml to describe an application's dep
     ![](../../res/img/DeployApplications/DeployApplications-1-5.png)
 6. Deploy your app on App Engine by using `gcloud`:
     ```bash
-    $ gcloud app deploy
+    (env)$ gcloud app deploy
     ```
     * Watch in Cloud Shell as the application gets built. This will up to 5 minutes. The App Engine Flexible environment is automatically provisioning a Google Compute Engine virtual machine for you behind the scenes, and then installing the application, then starting it.
         ![](../../res/img/DeployApplications/DeployApplications-1-6.png)
