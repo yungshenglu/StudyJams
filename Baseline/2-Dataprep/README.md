@@ -49,7 +49,7 @@ To complete this lab, you need:
 ## Create a Cloud Storage bucket in your project
 
 1. In the Cloud Platform Console, select `Navigation menu > Storage > Browser`.
-    ![](../../res/img/Baseline/Baseline-2-5.png)
+    ![](../../res/img/Baseline/Baseline-2-1.png)
 2. Click `Create bucket`.
 3. In the `Create a bucket` dialog, `Name` the bucket a unique name, see [bucket name requirements](https://cloud.google.com/storage/docs/bucket-naming#requirements). Leave all other settings at the default value.
 4. Click **Create**.
@@ -67,7 +67,7 @@ To complete this lab, you need:
 7. Check the checkbox and click Accept to agree to Trifacta Terms of Service.
 8. Click Continue on the First time set up screen to create the default storage location.
 
-![](../../res/img/Baseline/Baseline-2-6.png)
+![](../../res/img/Baseline/Baseline-2-2.png)
 
 * In the Welcome page, click `Hide tour`.
 
@@ -77,9 +77,9 @@ To complete this lab, you need:
 Cloud Dataprep uses a `flow` workspace to access and manipulate datasets.
 
 1. Click `Create Flow` in the upper right corner:
-    ![](../../res/img/Baseline/Baseline-2-7.png)
+    ![](../../res/img/Baseline/Baseline-2-3.png)
 2. Name and describe the flow. Since this lab uses 2016 data from the [United States Federal Elections Commission 2016](https://classic.fec.gov/finance/disclosure/ftpdet.shtml#a2015_2016), name the flow "FEC-2016", and the describe the flow as "United States Federal Elections Commission 2016".
-    ![](../../res/img/Baseline/Baseline-2-8.png)
+    ![](../../res/img/Baseline/Baseline-2-4.png)
 3. Click `Create`.
     * The FEC-2016 flow page opens. You can scroll through the "What's a flow?" slides to get an overview of what you'll be doing next, or click `Don't show me any helpers` to skip it.
 
@@ -89,50 +89,50 @@ Cloud Dataprep uses a `flow` workspace to access and manipulate datasets.
 In this section you import and add data to the FEC-206 flow.
 
 1. Click `Import & Add Datasets`.
-    ![](../../res/img/Baseline/Baseline-2-9.png)
+    ![](../../res/img/Baseline/Baseline-2-5.png)
 2. In the left menu pane, select `GCS` to import datasets from Google Cloud Storage, then click on the pencil to edit the file path.
-    ![](../../res/img/Baseline/Baseline-2-10.png)
+    ![](../../res/img/Baseline/Baseline-2-6.png)
 3. Insert `gs://dataprep-samples/us-fec` in the `Choose a file or folder` text box, then click `Go`.
-    ![](../../res/img/Baseline/Baseline-2-11.png)
+    ![](../../res/img/Baseline/Baseline-2-7.png)
     * You may have to widen the browser window to see the `Go` and `Cancel` buttons.
 4. Click the `+` icon next to cn-2016.txt to create a dataset shown in the right pane. Click on the title in the dataset and rename it "Candidate Master 2016".
 5. In the same way add the itcont-2016.txt dataset, and rename it "Campaign Contributions 2016".
-    ![](../../res/img/Baseline/Baseline-2-12.png)
+    ![](../../res/img/Baseline/Baseline-2-8.png)
 6. After both datasets are listed in the right pane, click `Import & Add to Flow`.
     * You see both datasets listed as a flow.
-    ![](../../res/img/Baseline/Baseline-2-13.png)
+    ![](../../res/img/Baseline/Baseline-2-9.png)
 
 ---
 ## Prep the candidate file
 
 1. By default, the Candidate Master 2016 dataset is selected. In the right pane, click `Add New Recipe`.
-    ![](../../res/img/Baseline/Baseline-2-14.png)
+    ![](../../res/img/Baseline/Baseline-2-10.png)
 2. Click `Edit Recipe`.
-    ![](../../res/img/Baseline/Baseline-2-15.png)
+    ![](../../res/img/Baseline/Baseline-2-11.png)
     * The Candidate Master 2016-2 Transformer page opens in the grid view.
-        ![](../../res/img/Baseline/Baseline-2-16.png)
+        ![](../../res/img/Baseline/Baseline-2-12.png)
     * The Transformer page is where you build your transformation recipe and see the results applied to the sample. When you are satisfied with what you see, execute the job against your dataset.
     * Each of the column heads have a Name and value that specified the data type. Data types are shown when you click the flag icon:
-        ![](../../res/img/Baseline/Baseline-2-17.png)
+        ![](../../res/img/Baseline/Baseline-2-13.png)
 
 Explore data in the grid view and apply transformation steps to your recipe.
 
 1. Column5 provides data from 1990-2064. Widen column5 (like you would on a spreadsheet) to separate each year. Click to select the tallest bin, which represents year 2016.
-    ![](../../res/img/Baseline/Baseline-2-18.png)
+    ![](../../res/img/Baseline/Baseline-2-14.png)
     * This creates a step where these values are selected.
 2. In the `Suggestions` panel on the right, in the `Keep rows` section, click `Add` to add this step your recipe.
-    ![](../../res/img/Baseline/Baseline-2-19.png)
+    ![](../../res/img/Baseline/Baseline-2-15.png)
     * The Recipe panel on the right now has the following step: `Keep rows where(date(2016, 1, 1) <= column5) && (column5 < date(2018, 1, 1))`
 3. In Column6 (State), hover over and click on the mismatched (red) portion of the header to select the mismatched rows.
-    ![](../../res/img/Baseline/Baseline-2-20.png)
+    ![](../../res/img/Baseline/Baseline-2-16.png)
     * Scroll down to find the mismatched values and notice how most of these records have the value "P" in column7, and "US" in column6. The mismatch occurs because column6 is marked as a "State" column (indicated by the flag icon), but there are non-state (such as "US") values.
 4. To correct the mismatch, click `Cancel` in the right pane to cancel the transformation, then click on the flag icon in `Column6` and change it to a `String` column.
-    ![](../../res/img/Baseline/Baseline-2-21.png)
+    ![](../../res/img/Baseline/Baseline-2-17.png)
     * There is no longer a mismatch and the column marker is now green.
 5. Filter on just the presidential candidates, which are those records that have the value "P" in column7. In the histogram for column7, hover over the two bins to see which is "H" and which is "P". Click the "P" bin.
-    ![](../../res/img/Baseline/Baseline-2-22.png)
+    ![](../../res/img/Baseline/Baseline-2-18.png)
 6. In the right column, click `Add` to accept the step to the recipe.
-    ![](../../res/img/Baseline/Baseline-2-23.png)
+    ![](../../res/img/Baseline/Baseline-2-19.png)
 
 ---
 ## Join the Contributions file
@@ -142,11 +142,11 @@ On the Join page, you can add your current dataset to another dataset or recipe 
 Before you join the Contributions file to the Candidates file, clean up the Contributions file.
 
 1. Click on `FEC-2016` (the dataset selector) at the top of the grid view page.
-    ![](../../res/img/Baseline/Baseline-2-24.png)
+    ![](../../res/img/Baseline/Baseline-2-20.png)
 2. Click to select the grayed out `Campaign Contributions`.
 3. In the right pane, click `Add New Recipe`, then click `Edit Recipe`.
 4. Click the `recipe` icon at the top right of the page, then click `Add New Step`.
-    ![](../../res/img/Baseline/Baseline-2-25.png)
+    ![](../../res/img/Baseline/Baseline-2-21.png)
 
 Remove extra delimiters in the dataset.
 
@@ -155,22 +155,22 @@ Remove extra delimiters in the dataset.
    replacepatterns col: * with: '' on: `{start}"|"{end}` global: true
     ```
     * The Transformation Builder parses the Wrangle command and populates the Find and Replace transformation fields.
-        ![](../../res/img/Baseline/Baseline-2-26.png)
+        ![](../../res/img/Baseline/Baseline-2-22.png)
 2. Click `Add` to add the transform to the recipe.
 3. Add another new step to the recipe. Click `New Step`, then type "Join" in the Search box.
-    ![](../../res/img/Baseline/Baseline-2-27.png)
+    ![](../../res/img/Baseline/Baseline-2-23.png)
 4. Click `Join datasets` to open the Joins page.
 5. Click on `Candidate Master 2016-2` to join with Campaign Contributions-2, then `Accept` in the bottom right.
-    ![](../../res/img/Baseline/Baseline-2-28.png)
+    ![](../../res/img/Baseline/Baseline-2-24.png)
 6. Hover in the Join keys section, then click on the `pencil` (Edit icon).
-    ![](../../res/img/Baseline/Baseline-2-29.png)
+    ![](../../res/img/Baseline/Baseline-2-25.png)
     * Dataprep infers common keys. There are many common values that Dataprep suggests as Join Keys.
 7. In the Add Key panel, in the Suggested join keys section, click `column2 = column11`.
-    ![](../../res/img/Baseline/Baseline-2-30.png)
+    ![](../../res/img/Baseline/Baseline-2-26.png)
 8. Click `Save and Continue`.
     * Columns 2 and 11 open for your review.
 9. Click `Next`, then check the checkbox to the left of the "Columns" label to add all columns of both datasets to the joined dataset.
-    ![](../../res/img/Baseline/Baseline-2-31.png)
+    ![](../../res/img/Baseline/Baseline-2-27.png)
 10. Click `Add to Recipe` to return to the grid view.
 
 ---
@@ -184,7 +184,7 @@ Generate a useful summary by aggregating, averaging, and counting the contributi
     ```
     * An initial sample of the joined and aggregated data is displayed, representing a summary table of US presidential candidates and their 2016 campaign contribution metrics.
 2. Click `Add` to open a summary table of major US presidential candidates and their 2016 campaign contribution metrics.
-    ![](../../res/img/Baseline/Baseline-2-32.png)
+    ![](../../res/img/Baseline/Baseline-2-28.png)
 
 ---
 ## Rename columns
@@ -198,7 +198,7 @@ Generate a useful summary by aggregating, averaging, and counting the contributi
     set col: Average_Contribution_Sum value: round(Average_Contribution_Sum)
     ```
 3. Then click `Add`. Your results will look something like this:
-    ![](../../res/img/Baseline/Baseline-2-33.png)
+    ![](../../res/img/Baseline/Baseline-2-29.png)
 
 ---
 ## Congratulations!
