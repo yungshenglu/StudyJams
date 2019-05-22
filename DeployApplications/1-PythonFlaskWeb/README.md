@@ -359,14 +359,14 @@ You learned how to write and deploy a Python web application to the App Engine F
 
 This self-paced lab is part of the Qwiklabs Quest [Deploying Applications](https://google.qwiklabs.com/quests/26). A Quest is a series of related labs that form a learning path. Completing this Quest earns you the badge above, to recognize your achievement. You can make your badge (or badges) public and link to them in your online resume or social media account. [Enroll in this Quest](http://google.qwiklabs.com/learning_paths/26/enroll) and get immediate completion credit if you've taken this lab. S[ee other available Qwiklabs Quests](http://google.qwiklabs.com/catalog).
 
-#### Take Your Next Lab
+### Take Your Next Lab
 
 Continue your Quest with [Build a Node.js Web App using Google Cloud Platform](https://google.qwiklabs.com/searches/lab?keywords=build%20a%20Node.js%20Web%20App), or check out these suggestions:
 
 * [Build and Launch an ASP.NET Core App from Google Cloud Shell](https://google.qwiklabs.com/searches/lab?keywords=build%20and%20Launch%20an%20ASP.NET)
 * [Running WordPress on App Engine Flexible Environment](https://google.qwiklabs.com/searches/lab?keywords=Running%20WordPress%20on%20App)
 
-#### Learn More
+### Learn More
 
 * Python on Google Cloud Platform: https://cloud.google.com/python/
 * App Engine Flexible Documentation for Python: https://cloud.google.com/appengine/docs/flexible/python/
