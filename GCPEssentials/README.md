@@ -1,6 +1,6 @@
 # GCP Essentials
 
-> Introductory 5 Steps 2h 50m 8 Credits
+> Introductory 5 Steps, 2h 50m, 8 Credits
 
 In this introductory-level quest, you will get hands-on practice with the Google Cloud Platform’s fundamental tools and services. GCP Essentials is the recommended first Quest for the Google Cloud learner—you will come in with little or no prior cloud knowledge, and come out with practical experience that you can apply to your first GCP project. From writing Cloud Shell commands and deploying your first virtual machine, to running applications on Kubernetes Engine or with load balancing, GCP Essentials is a prime introduction to the platform’s basic features. [1-minute videos walk you through key concepts for each lab](https://www.youtube.com/watch?v=ew-r46FmzSM&index=1&list=PLIivdWyY5sqJrCZ8lrSFbMFS5STOejzz_).
 
