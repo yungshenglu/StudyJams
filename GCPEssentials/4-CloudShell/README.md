@@ -40,11 +40,11 @@ To complete this lab, you need:
 ### How to start your lab and sign in to the Console
 
 1. Click the `Start Lab` button. If you need to pay for the lab, a pop-up opens for you to select your payment method. On the left you will see a panel populated with the temporary credentials that you must use for this lab.
-    ![](../../res/img/GCPEssentials-2-1.png)
+    ![](../../res/img/Setup/Setup-1.png)
 2. Copy the username, and then click `Open Google Console`. The lab spins up resources, and then opens another tab that shows the `Choose an account` page.
     * **Tip:** Open the tabs in separate windows, side-by-side.
 3. On the Choose an account page, click `Use Another Account`.
-    ![](../../res/img/GCPEssentials-2-2.png)
+    ![](../../res/img/Setup/Setup-2.png)
 4. The Sign in page opens. Paste the username that you copied from the Connection Details panel. Then copy and paste the password.
     * **Important:** You must use the credentials from the Connection Details panel. Do not use your Qwiklabs credentials. If you have your own GCP account, do not use it for this lab (avoids incurring charges).
 5. Click through the subsequent pages:
@@ -53,19 +53,19 @@ To complete this lab, you need:
     * Do not sign up for free trials.
 6. After a few moments, the GCP console opens in this tab.
     * **Note:** You can view the menu with a list of GCP Products and Services by clicking the Navigation menu at the top-left, next to “Google Cloud Platform”.
-        ![](../../res/img/GCPEssentials-2-3.png)
+        ![](../../res/img/Setup/Setup-3.png)
 
 ### Activate Google Cloud Shell
 
 Google Cloud Shell is a virtual machine that is loaded with development tools. It offers a persistent 5GB home directory and runs on the Google Cloud. Google Cloud Shell provides command-line access to your GCP resources.
 
 1. In GCP console, on the top right toolbar, click the `Open Cloud Shell` button.
-    ![](../../res/img/GCPEssentials-2-4.png)
+    ![](../../res/img/Setup/Setup-4.png)
 2. In the dialog box that opens, click `START CLOUD SHELL`:
-    ![](../../res/img/GCPEssentials-2-5.png)
+    ![](../../res/img/Setup/Setup-5.png)
     * You can click `START CLOUD SHELL` immediately when the dialog box opens.
 3. It takes a few moments to provision and connect to the environment. When you are connected, you are already authenticated, and the project is set to your `PROJECT_ID`. For example:
-    ![](../../res/img/GCPEssentials-2-6.png)
+    ![](../../res/img/Setup/Setup-6.png)
 4. `gcloud` is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell and supports tab-completion.
     * You can list the active account name with this command:
         ```bash
@@ -93,7 +93,7 @@ Google Cloud Shell is a virtual machine that is loaded with development tools. I
 
 Certain Compute Engine resources live in regions or zones. A region is a specific geographical location where you can run your resources. Each region has one or more zones. For example, the `us-central1` region denotes a region in the Central United States that has zones `us-central1-a`, `us-central1-b`, `us-central1-c`, and `us-central1-f`.
 
-![](../../res/img/GCPEssentials-2-7.png)
+![](../../res/img/GCPEssentials/GCPEssentials-2-7.png)
 
 Resources that live in a zone are referred to as zonal resources. Virtual machine Instances and persistent disks live in a zone. To attach a persistent disk to a virtual machine instance, both resources must be in the same zone. Similarly, if you want to assign a static IP address to an instance, the instance must be in the same region as the static IP.
 * Learn more about regions and zones and see a complete list in [Regions & Zones documentation](https://cloud.google.com/compute/docs/regions-zones/).
@@ -102,7 +102,7 @@ Resources that live in a zone are referred to as zonal resources. Virtual machin
 ## Use the command line
 
 1. Open a new `Cloud Shell` session by clicking on the icon in the top right corner of the GCP Console:
-    ![](../../res/img/GCPEssentials-4-1.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials-4-1.png)
 2. After Cloud Shell is activated you can use the command line to invoke the Cloud SDK `gcloud` command or other tools available on the virtual machine instance. You can also use your `$HOME` directory in persistent disk storage to store files across projects and between Cloud Shell sessions. Your `$HOME` directory is private to you and cannot be accessed by other users.
     * Let's take a look at some of the commands available.
         * `gcloud` offers simple usage guidelines that are available by adding the `-h` flag onto the end of any `gcloud` invocation. Run the following command in Cloud Shell:
@@ -177,7 +177,7 @@ You can use the `gsutil` tool in Cloud Shell to manage Cloud Storage resources. 
     $ gsutil cp test.dat gs://unique-name
     ```
 7. To see your bucket and file, open the navigation menu and select `Storage > Browser`. Then click on your bucket. You should see the `test.dat` file:
-    ![](../../res/img/GCPEssentials-4-2.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials-4-2.png)
 
 ---
 ## Test your Understanding

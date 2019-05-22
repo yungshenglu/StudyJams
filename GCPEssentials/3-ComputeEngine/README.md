@@ -33,11 +33,11 @@ To complete this lab, you need:
 ### How to start your lab and sign in to the Console
 
 1. Click the `Start Lab` button. If you need to pay for the lab, a pop-up opens for you to select your payment method. On the left you will see a panel populated with the temporary credentials that you must use for this lab.
-    ![](../../res/img/GCPEssentials-2-1.png)
+    ![](../../res/img/Setup/Setup-1.png)
 2. Copy the username, and then click `Open Google Console`. The lab spins up resources, and then opens another tab that shows the `Choose an account` page.
     * **Tip:** Open the tabs in separate windows, side-by-side.
 3. On the Choose an account page, click `Use Another Account`.
-    ![](../../res/img/GCPEssentials-2-2.png)
+    ![](../../res/img/Setup/Setup-2.png)
 4. The Sign in page opens. Paste the username that you copied from the Connection Details panel. Then copy and paste the password.
     * **Important:** You must use the credentials from the Connection Details panel. Do not use your Qwiklabs credentials. If you have your own GCP account, do not use it for this lab (avoids incurring charges).
 5. Click through the subsequent pages:
@@ -46,17 +46,17 @@ To complete this lab, you need:
     * Do not sign up for free trials.
 6. After a few moments, the GCP console opens in this tab.
     * **Note:** You can view the menu with a list of GCP Products and Services by clicking the Navigation menu at the top-left, next to “Google Cloud Platform”.
-        ![](../../res/img/GCPEssentials-2-3.png)
+        ![](../../res/img/Setup/Setup-3.png)
 
 ---
 ## Create a virtual machine instance
 
 1. In the GCP Console, go to `Compute Engine > VM instances`, then click `Create`.
-    ![](../../res/img/GCPEssentials-3-1.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-3-1.png)
 2. In the `Boot disk` section, click `Change` to begin configuring your boot disk.
-    ![](../../res/img/GCPEssentials-3-2.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-3-2.png)
 3. Choose `Windows Server 2012 R2 Datacenter`, then `Select`. Leave all other settings at their defaults.
-    ![](../../res/img/GCPEssentials-3-3.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-3-3.png)
 4. Click the `Create` button to create the instance.
 
 ### Activate Google Cloud Shell
@@ -64,12 +64,12 @@ To complete this lab, you need:
 Google Cloud Shell is a virtual machine that is loaded with development tools. It offers a persistent 5GB home directory and runs on the Google Cloud. Google Cloud Shell provides command-line access to your GCP resources.
 
 1. In GCP console, on the top right toolbar, click the `Open Cloud Shell` button.
-    ![](../../res/img/GCPEssentials-2-4.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-2-4.png)
 2. In the dialog box that opens, click `START CLOUD SHELL`:
-    ![](../../res/img/GCPEssentials-2-5.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-2-5.png)
     * You can click `START CLOUD SHELL` immediately when the dialog box opens.
 3. It takes a few moments to provision and connect to the environment. When you are connected, you are already authenticated, and the project is set to your `PROJECT_ID`. For example:
-    ![](../../res/img/GCPEssentials-2-6.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-2-6.png)
 4. `gcloud` is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell and supports tab-completion.
     * You can list the active account name with this command:
         ```bash
@@ -113,13 +113,13 @@ However it may not yet be ready to accept RDP connections, as it takes a while f
 ## Connect to your instance
 
 1. Click the name of your virtual machine:
-    ![](../../res/img/GCPEssentials-3-4.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-3-4.png)
 2. Under the `Remote Access` section, click the `Set Windows Password` button.
-    ![](../../res/img/GCPEssentials-3-5.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-3-5.png)
     * A username will be generated.
 3. Click `Set to generate a password` for this Windows instance. This may take several minutes to complete.
 4. Copy the password and save it so you can log into the instance.
-    ![](../../res/img/GCPEssentials-3-6.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-3-6.png)
 
 ---
 ## Remote desktop (RDP) into the Windows Server
@@ -127,11 +127,11 @@ However it may not yet be ready to accept RDP connections, as it takes a while f
 It's time to RDP into the Windows Server. You can RDP directly from the browser using the Chrome RDP for [Google Cloud Platform extension](https://chrome.google.com/webstore/detail/chrome-rdp-for-google-clo/mpbbnannobiobpnfblimoapbephgifkm).
 
 1. Click on `RDP` to connect.
-    ![](../../res/img/GCPEssentials-3-7.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-3-7.png)
 2. This prompts you to install the RDP Extension. Once installed, GCP opens up a login page where you use your Windows user and password to log in. Paste in the password you saved earlier.
-    ![](../../res/img/GCPEssentials-3-8.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-3-8.png)
 3. Click `Continue` to confirm you want to connect.
-    ![](../../res/img/GCPEssentials-3-9.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials/GCPEssentials-3-9.png)
     * When Server Manager opens you are connected to `instance-1`, the VM instance on the Windows Server.
 
 ---

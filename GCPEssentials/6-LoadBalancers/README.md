@@ -44,11 +44,11 @@ To complete this lab, you need:
 ### How to start your lab and sign in to the Console
 
 1. Click the `Start Lab` button. If you need to pay for the lab, a pop-up opens for you to select your payment method. On the left you will see a panel populated with the temporary credentials that you must use for this lab.
-    ![](../../res/img/GCPEssentials-2-1.png)
+    ![](../../res/img/Setup/Setup-1.png)
 2. Copy the username, and then click `Open Google Console`. The lab spins up resources, and then opens another tab that shows the `Choose an account` page.
     * **Tip:** Open the tabs in separate windows, side-by-side.
 3. On the Choose an account page, click `Use Another Account`.
-    ![](../../res/img/GCPEssentials-2-2.png)
+    ![](../../res/img/Setup/Setup-2.png)
 4. The Sign in page opens. Paste the username that you copied from the Connection Details panel. Then copy and paste the password.
     * **Important:** You must use the credentials from the Connection Details panel. Do not use your Qwiklabs credentials. If you have your own GCP account, do not use it for this lab (avoids incurring charges).
 5. Click through the subsequent pages:
@@ -57,19 +57,19 @@ To complete this lab, you need:
     * Do not sign up for free trials.
 6. After a few moments, the GCP console opens in this tab.
     * **Note:** You can view the menu with a list of GCP Products and Services by clicking the Navigation menu at the top-left, next to “Google Cloud Platform”.
-        ![](../../res/img/GCPEssentials-2-3.png)
+        ![](../../res/img/Setup/Setup-3.png)
 
 ### Activate Google Cloud Shell
 
 Google Cloud Shell is a virtual machine that is loaded with development tools. It offers a persistent 5GB home directory and runs on the Google Cloud. Google Cloud Shell provides command-line access to your GCP resources.
 
 1. In GCP console, on the top right toolbar, click the `Open Cloud Shell` button.
-    ![](../../res/img/GCPEssentials-2-4.png)
+    ![](../../res/img/Setup/Setup-4.png)
 2. In the dialog box that opens, click `START CLOUD SHELL`:
-    ![](../../res/img/GCPEssentials-2-5.png)
+    ![](../../res/img/Setup/Setup-5.png)
     * You can click `START CLOUD SHELL` immediately when the dialog box opens.
 3. It takes a few moments to provision and connect to the environment. When you are connected, you are already authenticated, and the project is set to your `PROJECT_ID`. For example:
-    ![](../../res/img/GCPEssentials-2-6.png)
+    ![](../../res/img/Setup/Setup-6.png)
 4. `gcloud` is the command-line tool for Google Cloud Platform. It comes pre-installed on Cloud Shell and supports tab-completion.
     * You can list the active account name with this command:
         ```bash

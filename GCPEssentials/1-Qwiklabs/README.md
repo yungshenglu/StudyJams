@@ -38,7 +38,7 @@ Once you're ready, scroll down to get your lab set up.
 
 Regardless of topic or expertise level, all Qwiklabs share a common interface. This lab that you're taking should look quite similar to the following:
 
-![](../../res/img/GCPEssentials-1-1.png)
+![](../../res/img/GCPEssentials/GCPEssentials-1-1.png)
 
 > **Note:** You are not taking the "Creating a Virtual Machine" lab show above, it used merely as an example to highlight common features across Qwiklabs.
 
@@ -63,15 +63,15 @@ Most, but not all labs include a score. This feature is called "activity trackin
 ### Purchasing Credits
 
 1. If you haven't already, click on the `Start Lab` button now. If you have an "Access Code" (a coupon that covers the cost of a single lab regardless of expertise level) or have already purchased credits, you can skip down to the next section "Starting a Lab". Otherwise, click `BUY CREDITS`. This will take you to a new page that offers different credit packages:
-    ![](../../res/img/GCPEssentials-1-2.gif)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-2.gif)
 2. Enter in the amount of credits you want to buy and click `Pay with Credit Card`. This will take you to a secure panel, prompting you to enter in your credit card information:
-    ![](../../res/img/GCPEssentials-1-3.gif)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-3.gif)
 3. Enter in your credit card information and click `Pay`. You're all set to take this and any other Qwiklabs! You can always buy more credits by clicking on the profile icon in the top right corner and selecting "Buy Credits". You will also be prompted to purchase more if you run out and try to start a new lab.
 
 ### Starting a Lab
 
 1. Now that we understand the key features and components of a lab, click on the `Start Lab` button in the top-right corner. If you have an Access Code, enter it in now and click `Launch with an Access code`. Otherwise, click `Launch with 1 Credit`:
-    ![](../../res/img/GCPEssentials-1-4.gif)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-4.gif)
 2. It may take a moment for the GCP environment and credentials to spin up—please be patient. Once the timer in the top right corner starts ticking and the `Start Lab` button turns into a red `End Lab` button, everything is in place and you're all set to log in to the Google Cloud Platform Console.
 3. Make sure that you do not click the `End Lab` button until you have completed all the tasks required of you. Once clicked, your temporary credentials will be invalidated and you will no longer be able to access the work you've done throughout the lab. Only when you reach the end and have made sure that you've completed all the necessary steps will you click the `End Lab` button. You must click this button when you finish—if you do not, you won't be able to take another lab afterwards (Qwiklabs has protections in place that prevent concurrent enrollment.)
 
@@ -101,7 +101,7 @@ Answer the following multiple choice questions to reinforce your understanding o
 
 Now that your lab instance is up and running, take a look at the **Connection Details** panel on the left-hand side. It should be populated with an Open Google Console button and Username, Password, and GCP Project ID fields.
 
-![](../../res/img/GCPEssentials-1-5.png)
+![](../../res/img/GCPEssentials/GCPEssentials-1-5.png)
 
 > **Note:** Your credentials will resemble, but not match the above—every lab instance generates new temporary credentials.
 
@@ -125,17 +125,17 @@ These are credentials representing an identity in the GCP Identity and Access Ma
 
 1. Now that you have a better understanding of the Connection Details panel, let's use the details it contains to sign in to the GCP Console. Click on the `Open Google Console` button. This will open the GCP sign in page in a new browser tab.
    * You should now be on a page that resembles the following:
-        ![](../../res/img/GCPEssentials-1-6.png)
+        ![](../../res/img/GCPEssentials/GCPEssentials-1-6.png)
 2. If you've ever signed in to a Google application like Gmail, this page should look familiar. To sign in to the console, copy the `Username` from the Connection Details and paste it in to the `Email or phone` field and hit enter.
     * Wait! Make sure that you used the `googlexxxxxx_student@qwiklabs.net` email to sign in, NOT your personal or company email address!
 3. Go back and copy the `Password` from the provisioned credentials on the Qwiklabs lab page and paste it in to the GCP sign in `Password` field and hit enter.
     * The username that resembles googlexxxxxx_student@qwiklabs.net is a Google account that has been created for your use as a Qwiklabs student. It has a specific domain name, which is `qwiklabs.net`, and has been assigned IAM roles that allow you to access the GCP Project that you have been provisioned.
     * If you successfully logged in, your page should resemble the following:
-        ![](../../res/img/GCPEssentials-1-7.png)
+        ![](../../res/img/GCPEssentials/GCPEssentials-1-7.png)
 4. Go ahead and click `Accept` to indicate your acknowledgement of Google's terms of service and privacy policy. You will then be brought to a `Protect your account` page. Since this is a temporary account, don't worry about updating recovery phone numbers or emails. Click `Done`.
 5. You will now be brought to the `Updates to Terms of Service` page—for email updates regarding future announcements check the `No` box. Check the `Yes` box to agree to the Google Cloud Platform's terms of service.
 6. And just like that, you've successfully accessed the Google Cloud Platform Console with your Qwiklabs credentials! Your page should now resemble the following:
-    ![](../../res/img/GCPEssentials-1-8.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-8.png)
 
 ### Test your understanding
 
@@ -160,10 +160,10 @@ We touched on GCP projects earlier when we examined the components of the "Conne
 *A [GCP Project](https://cloud.google.com/docs/overview/#projects) is an organizing entity for your Google Cloud resources. It often times contains resources and services—for example, it may hold a pool of virtual machines, a set of databases, and a network that connects them with one another. Projects also contain settings and permissions, which specify security rules and who has access to what resources.*
 
 1. If you look in the top-left side of the console, you will see a panel called `Project info` which should resemble the following:
-    ![](../../res/img/GCPEssentials-1-9.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-9.png)
 2. As you see, your project has a `name`, `ID`, and `number`. These identifiers are frequently used when interacting with GCP services. You are working out of one project so you can get practice with a specific service or feature of GCP.
 3. You probably haven't noticed it, but you actually have access to more than one GCP project. In fact, in some labs you may be provisioned more than one project to accomplish the tasks assigned. If you click on the drop-down menu with your project name and select `ALL`, you will see that there is a "Qwiklabs Resources" project visible as well:
-    ![](../../res/img/GCPEssentials-1-10.gif)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-10.gif)
 
 > **Note:** **Do not switch over to the Qwiklabs Resources Project at this point!** However, you may use it later in other labs.
 
@@ -193,9 +193,9 @@ Answer the following multiple choice questions to reinforce your understanding o
 ## Navigation Menu and Services
 
 1. In the top-left corner, you will notice a three-line icon that resembles the following:
-    ![](../../res/img/GCPEssentials-1-11.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-11.png)
 2. Clicking on this will reveal (or hide) a **navigation menu** that points to GCP's core services. If the menu isn't exposed, click on the icon now and scroll through to see the types of services offered:
-    ![](../../res/img/GCPEssentials-1-12.gif)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-12.gif)
 3. The navigation menu is an important component of the GCP console—it offers quick access to the platform's services and also outlines its offerings. If you scroll through the menu, you will see that there are seven categories of GCP services:
     * **Compute**: houses a variety of machine types that support any type of workload. The different computing options let you decide how involved you want to be with operational details and infrastructure amongst other things.
     * **Storage**: data storage and database options for structured or unstructured, relational or non relational data.
@@ -213,9 +213,9 @@ Answer the following multiple choice questions to reinforce your understanding o
 Earlier we mentioned that besides cloud computing services, GCP also houses a collection of permissions and roles that define who has access to what resources. We can use the [Cloud Identity and Access Management (IAM)](https://cloud.google.com/iam/) service to inspect and modify such roles and permissions.
 
 1. If closed, open up the navigation menu. Then near the top click `IAM & admin`. This will take you to a page that contains a list of users, which specifies permissions and roles granted to certain accounts. Try to sift through these and find the `@qwiklabs` username you signed in with:
-    ![](../../res/img/GCPEssentials-1-13.gif)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-13.gif)
     * You should find something similar:
-        ![](../../res/img/GCPEssentials-1-14.png)
+        ![](../../res/img/GCPEssentials/GCPEssentials-1-14.png)
 2. The `Member` field is set to `google23396_student@qwiklabs.net` (which matches the username you logged in with) and the name field is set to `google23396_student@qwiklabs.net student`. You will see that the `Role` field is set to `Editor`, which is one of three primitive roles offered by GCP. Primitive roles set project-level permissions and unless otherwise specified, they control access and management to all GCP services.
     * The following table pulls definitions from the [roles documentation](https://cloud.google.com/iam/docs/understanding-roles#primitive_roles), which gives a brief overview of viewer, editor, and owner role permissions:
         | Role Name | Permissions |
@@ -253,12 +253,12 @@ APIs are "Application Programming Interfaces" that you can call directly or via 
 When Qwiklabs provisions a new GCP Project for a lab instance, it enables most APIs behind the scenes so you can work on the lab's tasks right away. Be aware that when you create your own GCP projects outside of Qwiklabs, you will have to enable certain APIs yourself.
 
 1. Most Cloud APIs provide you with detailed information on your project’s usage of that API, including traffic levels, error rates, and even latencies, helping you to quickly triage problems with applications that use Google services. You can view this information by opening the navigation menu and clicking on `APIs & Services > Library`:
-    ![](../../res/img/GCPEssentials-1-15.gif)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-15.gif)
 2. If you take a look at the left-hand menu with the header `CATEGORY`, you will see all the different type of categories offered. In the API search bar, type in Dialogflow and select the `Dialogflow API`. You should now be on the following page:
-    ![](../../res/img/GCPEssentials-1-16.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-16.png)
     * The `Dialogflow API` allows you to build rich conversational applications (e.g. for Google Assistant) without having to worry about the underlying machine learning and natural language understanding schema.
 3. Now click `Enable`. This will take you to a new page, hit the back button in your browser and you will see that the API is now enabled:
-    ![](../../res/img/GCPEssentials-1-17.png)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-17.png)
 4. Now click on `Try this API`. This will open a new tab that will reveal the documentation for the Dialogflow API and will specify the methods available to you. Examine some of these and close the tab when you're finished.
     * If you're interested in learning more about APIs, please see new the new hands-on tool in Google Cloud called [APIs Explorer](https://developers.google.com/apis-explorer/#p/). We've also created a lab [APIs Explorer: Qwik Start](https://google.qwiklabs.com/catalog_lab/1241) that will give you hands-on experience with the tool using a simple example.
 5. Open the navigation menu and click `Home` to go back to main page of the GCP console.
@@ -279,7 +279,7 @@ Now that you understand the key features of GCP and the console, you will get ha
 Cloud Shell lets you run all of your shell commands without leaving the console and comes with pre-installed command line tools.
 
 1. In the top-right corner of the console, click on the `Activate Cloud Shell` button and then click `Start Cloud Shell` if prompted:
-    ![](../../res/img/GCPEssentials-1-18.gif)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-18.gif)
    * A new, black window should appear at the bottom of the console with messages and prompts that resemble the following:
         ```bash
         Welcome to Cloud Shell! Type "help" to get started.
@@ -319,7 +319,7 @@ Cloud Shell lets you run all of your shell commands without leaving the console 
     $ nano test.txt
     ```
     * This will open the blank file with the Nano text editor:
-        ![](../../res/img/GCPEssentials-1-9.png)
+        ![](../../res/img/GCPEssentials/GCPEssentials-1-9.png)
 6. Go ahead and type in a message, like the following:
     ```bash
     GCP and Qwiklabs are the best!
@@ -339,7 +339,7 @@ Cloud Shell lets you run all of your shell commands without leaving the console 
 ## Ending your lab
 
 1. Now that you're finished with the lab, click on the `End Lab` button at the top of this page.
-    ![](../../res/img/GCPEssentials-1-20.gif)
+    ![](../../res/img/GCPEssentials/GCPEssentials-1-20.gif)
    * Please rate each lab you take in Qwiklabs. Rate it five stars if you were satisfied—anything less if you weren't. Leave comments about your experiences in the `Comment` window; Google always appreciates thoughtful feedback.
 2. Ending a lab will remove your access to the GCP project as well as the services and work you've done in it. If you go back to the GCP console, you will see that you've been signed out automatically. You can close that tab now.
 
