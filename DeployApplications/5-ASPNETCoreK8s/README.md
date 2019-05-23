@@ -512,5 +512,47 @@ If you have not set up specific tokens for this purpose, you can use a token all
     ![](../../res/img/DeployApplications/DeployApplications-5-5.png)
     * Type in `8081`, then click `Change and Preview`:
         ![](../../res/img/DeployApplications/DeployApplications-5-6.png)
-    * This should send you to the API endpoint. To get to the dashboard, remove `"?authuser=0"` and replace it with `"api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/"`.
+4. This should send you to the API endpoint. To get to the dashboard, remove `"?authuser=0"` and replace it with `"api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/"`.
+    * You will get the web preview:
+        ![](../../res/img/DeployApplications/DeployApplications-5-7.png)
+    * Select the `Token` radio button and paste the token copied from previous step. Click `Sign In`.
+5. Enjoy the Kubernetes graphical dashboard and use it for deploying containerized applications, as well as for monitoring and managing your clusters!
+    ![](../../res/img/DeployApplications/DeployApplications-5-8.png)
+    * Alternatively you can access the dashboard from a development or local machine using similar instructions provided when, from the Web console, you press the Connect button for the cluster you wish to monitor.
+        ![](../../res/img/DeployApplications/DeployApplications-5-9.png)
+    * Once you're done with the dashboard, you can `CTRL + C` to stop the proxy. Learn more about the Kubernetes dashboard by taking the Dashboard tour.
 
+---
+## Congratulations!
+
+This concludes this simple getting started codelab with ASP.NET Core and Kubernetes. We've only scratched the surface of this technology and we encourage you to explore further with your own pods, replication controllers, and services but also to check out liveness probes (health checks) and consider using the Kubernetes API directly.
+
+### What we've covered
+
+* How to package a simple ASP.NET Core app as a Docker container.
+* How to create your Kubernetes cluster on Container Engine.
+* How to deploy your ASP.NET Core app to a pod.
+* How to allow external traffic to your pod.
+* How to scale up your service and roll out an upgrade.
+* How to run Kubernetes Graphical dashboard.
+
+### Finish Your Quest
+
+This self-paced lab is part of Qwiklabs [Developing Applications](https://google.qwiklabs.com/quests/26) and [Windows on GCP](https://google.qwiklabs.com/quests/27) Quests. A Quest is a series of related labs that form a learning path. Completing the Quests earns you the badges above, to recognize your achievement. You can make your badge (or badges) public and link to them in your online resume or social media account. Enroll in the [Developing Applications Quest](http://google.qwiklabs.com/learning_paths/26/enroll) or the [Windows on GCP Quest](https://google.qwiklabs.com/quests/27) and get immediate completion credit if you've taken this lab. [See other available Qwiklabs Quests](http://google.qwiklabs.com/catalog).
+
+### Take Your Next Lab
+
+Continue your Quest with [Deploy Windows Server with ASP.NET Framework to Compute Engine (Windows on GCP)](https://google.qwiklabs.com/catalog_lab/507), or check out these suggestions:
+
+* [Deploy a Ruby on Rails App to App Engine Flexible Environment](https://google.qwiklabs.com/catalog_lab/334)
+* [Running WordPress on App Engine Flexible Environment](https://google.qwiklabs.com/catalog_lab/985)
+
+#### Next Steps
+
+* Full documentation is available [here](https://cloud.google.com/container-engine/docs/kubectl/)
+* Learn more about [Kubernetes](http://kubernetes.io/).
+* Learn more about [Windows on Google Cloud Platform](https://cloud.google.com/windows).
+* Learn more about .[NET on Google Cloud Platform](https://cloud.google.com/dotnet/).
+* Learn more about [SQL Server on Google Cloud Platform](https://cloud.google.com/sql-server/).
+* Learn more about [Cloud Tools for Visual Studio](https://cloud.google.com/visual-studio).
+* Learn more about [Cloud Tools for PowerShell](https://cloud.google.com/powershell/).
