@@ -1,18 +1,27 @@
 # Google Cloud Study Jams 2019
 
-![](res/img/studyjams.png)
+This repository is some notes of [Google Cloud Study Jams 2019](https://events.withgoogle.com/cloud-studyjam/).
 
 ---
-## Contents
+## [ML Study Jam 機器學習培訓計劃 - 初級](https://events.withgoogle.com/ml-study-jam-basic-tw/)
+
+![](res/img/studyjams-basic.png)
 
 * Basics
     * [GCP Essentials](GCPEssentials/)
     * [Deploy Applications](DeployApplications/)
 * Machine Learning
     * [Baseline: Data, ML, AI](Baseline/)
-* Kubernetes
-    * [Kubernetes in the Google Cloud](K8sGoogleCloud/)
-    * [Kubernetes Solutions](K8sSolutions/)
+
+---
+## [ML Study Jam 機器學習培訓計劃 - 進階](https://events.withgoogle.com/ml-study-jam-interm-tw/)
+
+![](res/img/studyjams-interm.png)
+
+> The courses are selected from [Machine Learning with TensorFlow on Google Cloud Platform Specialization]((https://www.coursera.org/specializations/machine-learning-tensorflow-gcp#courses)) on Coursera.
+
+* How Google does Machine Learning
+* Launching into Machine Learning
 
 ---
 ## Contributor
