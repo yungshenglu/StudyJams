@@ -3,8 +3,17 @@
 Now it’s time to answer a rather weird question: when is the most accurate ML model not the right one to pick? As we hinted at in the last module on Optimization -- simply because a model has a loss metric of 0 for your training dataset does not mean it will perform well on new data in the real world.
 
 ---
-## 
-s
+## Introduction
+
+---
+## Generalization
+
+---
+## Sampling
+
+---
+## Demo of Splitting Datasets in BigQuery
+
 ---
 ## Lab-1: Creating repeatable splits in BigQuery
 
