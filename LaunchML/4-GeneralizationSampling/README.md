@@ -65,20 +65,20 @@ Now it’s time to answer a rather weird question: when is the most accurate ML 
 > [![](https://img.youtube.com/vi/uJdQOydETmss/0.jpg)](https://youtu.be/uJdQOydETms)
 
 ---
-## Lab 1: Creating repeatable splits in BigQuery
+## Lab 4: Creating repeatable splits in BigQuery
 
 > [![](https://img.youtube.com/vi/0ii0fLqR2RY/0.jpg)](https://youtu.be/0ii0fLqR2RY)
 > [![](https://img.youtube.com/vi/Hk2Q7VE7Jlo/0.jpg)](https://youtu.be/Hk2Q7VE7Jlo)
 
-Please follow the details in [here](./Lab-1.md)
+* Please follow the details in [here](./Lab-4.md)
 
 ---
-## Lab 2: Exploring and Creating ML Datasets
+## Lab 5: Exploring and Creating ML Datasets
 
 > [![](https://img.youtube.com/vi/qAbnzDfqQns/0.jpg)](https://youtu.be/qAbnzDfqQns)
 > [![](https://img.youtube.com/vi/ocg5wJA6_IE/0.jpg)](https://youtu.be/ocg5wJA6_IE)
 
-Please follow the details in [here](./Lab-2.md)
+* Please follow the details in [here](./Lab-5.md)
 
 ---
 ## Module Quiz

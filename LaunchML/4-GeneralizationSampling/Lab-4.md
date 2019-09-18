@@ -1,13 +1,13 @@
-# Lab-2: Exploring and Creating ML Datasets
+# Lab 1: Creating repeatable splits in BigQuery
 
 > * Last Tested Date: DEC 03, 2018
 > * Last Updated Date: JUL 01, 2019
 
-![](../../res/img/LaunchML/LaunchML-4L-9.jpg)
+![](../../res/img/LaunchML/LaunchML-4L-1.jpg)
 
 ## Overview
 
-This lab is part of a lab series, where you go from exploring a taxicab dataset to training and deploying a high-accuracy distributed model with AI model.
+Repeatability is important in machine learning. If you do the same thing now and 5 minutes from now and get different answers, then it makes experimentation is difficult. In other words, you will find it difficult to gauge whether a change you made has resulted in an improvement or not.
 
 ### What you need
 
@@ -17,9 +17,7 @@ Logged into GCP Console with your Qwiklabs generated account
 
 In this lab, you will:
 
-* Explore a dataset using BigQuery and Datalab
-* Sample the dataset and create training, validation, and testing datasets for local development of TensorFlow models
-* Create a benchmark to evaluate the performance of ML against
+* Explore the impact of different ways of creating machine learning datasets.
 
 ---
 ## Setup
@@ -32,7 +30,7 @@ For each lab, you get a new GCP project and set of resources for a fixed time at
 3. When ready, click `START LAB`.
 4. Note your lab credentials. You will use them to sign in to `Cloud Platform Console`.
     ![](../../res/img/LaunchML/LaunchML-4L-2.png)
-5. Click `Open Google Console`.
+5. Cick `Open Google Console`.
 6. Click `Use another account` and copy/paste credentials for this lab into the prompts.
     * If you use other credentials, you'll get errors or **incur charges**.
 7. Accept the terms and skip the recovery resource page.
@@ -68,10 +66,10 @@ To clone the `training-data-analyst` notebook in your JupyterLab instance:
     ![](../../res/img/LaunchML/LaunchML-4L-8.png)
 
 ---
-## Explore Dataset, Create ML Datasets, Create benchmark
+## Creating Repeatable Dataset Splits
 
-1. In the notebook interface, navigate to `training-data-analyst > courses > machine_learning > deepdive > 02_generalization > labs` and open `create_datasets.ipynb`.
-    * This notebook is your cloned copy of the one in the course repository. Any code changes you make and run here are reflected only in your working copy (until you share with others). This way you can edit and run the code to practice the concepts.
+1. In the notebook interface, navigate to `training-data-analyst > courses > machine_learning > deepdive > 02_generalization` and open `repeatable_splitting.ipynb`.
+   * This notebook is your cloned copy of the one in the course repository. Any code changes you make and run here are reflected only in your working copy (until you share with others). This way you can edit and run the code to practice the concepts.
 2. In the notebook interface, click on `Edit > Clear All Outputs` (click on `Edit`, then in the drop-down menu, select `Clear All Outputs`).
 
 ---
