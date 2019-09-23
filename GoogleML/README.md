@@ -1,4 +1,4 @@
-# [How Google does Machine Learning](https://www.coursera.org/learn/google-machine-learning?specialization=machine-learning-tensorflow-gcp)
+# How Google does Machine Learning
 
 What is machine learning, and what kinds of problems can it solve? Google thinks about machine learning slightly differently -- of being about logic, rather than just data. We talk about why such a framing is useful for data scientists when thinking about building a pipeline of machine learning models. 
 
