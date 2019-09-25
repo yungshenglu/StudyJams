@@ -24,7 +24,7 @@ In this lab, you:
 
 In this lab you spin up a virtual machine, configure its security, access it remotely, and then carry out the steps of an ingest-transform-and-publish data pipeline manually.
 
-![](../../res/img/GoogleML/GoogleML-1-9.png)
+![](../../../res/img/GoogleML/GoogleML-1-9.png)
 
 The point is to ingest earthquake data from the US Geographic Service and create a map like the one shown. The map will be inserted into a web page, and then you will publish that web page. In order to carry out the compute, you will spin up a virtual machine and access it remotely. You will install some software on it, download some scripts, and then run them to do the actual data processing. The resulting files will be copied to Cloud Storage, from which you can set the access control to publish the files for anyone to access.
 
@@ -44,7 +44,7 @@ For each lab, you get a new GCP project and set of resources for a fixed time at
     * There is no pause feature. You can restart if needed, but you have to start at the beginning.
 3. When ready, click `START LAB`
 4. Note your lab credentials. You will use them to sign in to Cloud Platform Console. 
-    ![](../../res/img/GoogleML/GoogleML-4L-1.png)
+    ![](../../../res/img/GoogleML/GoogleML-4L-1.png)
 5. Click `Open Google Console`.
 6. Click `Use another account` and copy/paste credentials for **this** lab into the prompts.
     * If you use other credentials, you'll get errors or **incur charges**.
@@ -59,11 +59,11 @@ To create a Compute Engine instance:
 1. Browse to https://cloud.google.com/
 2. Click on `Go To Console`.
 3. Click on the `Navigation menu` (three horizontal lines):
-    ![](../../res/img/GoogleML/GoogleML-4L-2.png)
+    ![](../../../res/img/GoogleML/GoogleML-4L-2.png)
 4. Select `Compute Engine`.
 5. Click `Create` and wait for a form to load. You will need to change some options on the form that comes up.
 6. For **Identity and API access**, in **Access scopes**, select `Allow full access to all Cloud APIs`:
-    ![](../../res/img/GoogleML/GoogleML-4L-3.png)
+    ![](../../../res/img/GoogleML/GoogleML-4L-3.png)
 7. Now, click `Create`
 
 ---
@@ -72,7 +72,7 @@ To create a Compute Engine instance:
 You can remotely access your Compute Engine instance using Secure Shell (SSH):
 
 1. Click on SSH:
-    ![](../../res/img/GoogleML/GoogleML-4L-4.png)
+    ![](../../../res/img/GoogleML/GoogleML-4L-4.png)
     * **Note:** SSH keys are automatically transferred, and that you can ssh directly from the browser, with no extra software needed.
 2. To find some information about the Compute Engine instance, type the following into the command-line:
     ```bash
@@ -174,7 +174,7 @@ To publish Cloud Storage files to the web:
     $ gsutil acl ch -u AllUsers:R gs://<YOUR-BUCKET>/earthquakes/*
     ```
 2. Click on the `Public link` corresponding to `earthquakes.htm`
-    ![](../../res/img/GoogleML/GoogleML-4L-5.png)
+    ![](../../../res/img/GoogleML/GoogleML-4L-5.png)
 3. What is the URL of the published Cloud Storage file? How does it relate to your bucket name and content? ______________________________________________________
 4. What are some advantages of publishing to Cloud Storage? _____________________________________________
 
