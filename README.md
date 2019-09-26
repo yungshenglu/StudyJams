@@ -20,8 +20,9 @@ This repository is some notes of [Google Cloud Study Jams 2019](https://events.w
 
 > The courses are selected from [Machine Learning with TensorFlow on Google Cloud Platform Specialization]((https://www.coursera.org/specializations/machine-learning-tensorflow-gcp#courses)) on Coursera.
 
-* How Google does Machine Learning
-* Launching into Machine Learning
+* [How Google does Machine Learning](Coursera/GoogleML/)
+* [Launching into Machine Learning](Coursera/LaunchML/)
+* [Introduction to TensorFlow](Coursera/TensorFlow/)
 
 ---
 ## Contributor
