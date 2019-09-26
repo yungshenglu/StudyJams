@@ -5,7 +5,7 @@
 
 ## Overview
 
-In this lab you spin up a virtual machine, configure its security, access it remotely, and then carry out the steps of an ingest-transform-and-publish data pipeline manually.
+In this lab, you spin up a virtual machine, configure its security, access it remotely, and then carry out the steps of an ingest-transform-and-publish data pipeline manually.
 
 ### What You Learn
 

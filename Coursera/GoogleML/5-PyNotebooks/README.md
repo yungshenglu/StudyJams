@@ -85,8 +85,6 @@
 
 > [![](https://img.youtube.com/vi/hpMHcNZ1u0g/0.jpg)](https://youtu.be/hpMHcNZ1u0g)
 
-
-
 ---
 ## Cloud Shell
 

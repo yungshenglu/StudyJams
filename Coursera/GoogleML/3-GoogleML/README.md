@@ -1,4 +1,4 @@
-# How Google Does ML
+# How Google does ML
 
 ## Introduction
 

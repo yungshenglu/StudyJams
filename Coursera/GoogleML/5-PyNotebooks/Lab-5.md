@@ -5,7 +5,7 @@
 
 ## Overview
 
-In this lab you use Machine Learning APIs from within AI Platform Notebooks.
+In this lab, you use Machine Learning APIs from within AI Platform Notebooks.
 
 ### What You Learn
 

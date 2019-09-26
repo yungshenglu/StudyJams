@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab you analyze a large (70 million rows, 8 GB) airline dataset using Google BigQuery and Cloud Datalab.
+In this lab, you analyze a large (70 million rows, 8 GB) airline dataset using Google BigQuery and Cloud Datalab.
 
 ### What You Learn
 
