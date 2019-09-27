@@ -42,7 +42,7 @@ For each lab, you get a new GCP project and set of resources for a fixed time at
     * There is no pause feature. You can restart if needed, but you have to start at the beginning.
 3. When ready, click `START LAB`
 4. Note your lab credentials. You will use them to sign in to Cloud Platform Console. 
-    ![](../../../res/img/GoogleML/GoogleML-4L-1.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-4L-1.png)
 5. Click `Open Google Console`.
 6. Click `Use another account` and copy/paste credentials for **this** lab into the prompts.
     * If you use other credentials, you'll get errors or **incur charges**.
@@ -55,14 +55,14 @@ For each lab, you get a new GCP project and set of resources for a fixed time at
 To launch AI Platform Notebooks:
 
 1. Click on the **Navigation Menu**. Navigate to `AI Platforms`, then to `Notebooks`.
-    ![](../../../res/img/GoogleML/GoogleML-5L-11.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-11.png)
 2. On the Notebook instances page, click `+ NEW INSTANCE`. Select `TensorFlow 1.x`.
-    ![](../../../res/img/GoogleML/GoogleML-5L-12.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-12.png)
     * In the pop-up, confirm the name of the deep learning VM and click `Create`.
-        ![](../../../res/img/GoogleML/GoogleML-5L-13.png)
+        ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-13.png)
     * The new VM will take 2-3 minutes to start.
 3. Click `Open JupyterLab`. A JupyterLab window will open in a new tab.
-    ![](../../../res/img/GoogleML/GoogleML-5L-14.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-14.png)
 
 ---
 ## Clone Course Repo within Your Datalab Instance
@@ -70,13 +70,13 @@ To launch AI Platform Notebooks:
 To clone the `training-data-analyst` notebook in your JupyterLab instance:
 
 1. In JupyterLab, click the `Terminal` icon to open a new terminal.
-    ![](../../../res/img/GoogleML/GoogleML-5L-15.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-15.png)
 2. At the command-line prompt, type in the following command and press `Enter`.
     ```bash
     $ git clone https://github.com/GoogleCloudPlatform/training-data-analyst 
     ```
 3. Confirm that you have cloned the repository by double clicking on the `training-data-analyst` directory and ensuring that you can see its contents. The files for all the Jupyter notebook-based labs throughout this course are available in this directory.
-    ![](../../../res/img/GoogleML/GoogleML-5L-16.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-16.png)
 
 ---
 ## Enable APIs and Get API Key

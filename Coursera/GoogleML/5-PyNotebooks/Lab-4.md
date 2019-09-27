@@ -25,7 +25,7 @@ For each lab, you get a new GCP project and set of resources for a fixed time at
     * There is no pause feature. You can restart if needed, but you have to start at the beginning.
 3. When ready, click `START LAB`
 4. Note your lab credentials. You will use them to sign in to Cloud Platform Console. 
-    ![](../../../res/img/GoogleML/GoogleML-4L-1.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-4L-1.png)
 5. Click `Open Google Console`.
 6. Click `Use another account` and copy/paste credentials for **this** lab into the prompts.
     * If you use other credentials, you'll get errors or **incur charges**.
@@ -53,9 +53,9 @@ To launch Cloud Datalab:
 4. Look back at Cloud Shell and follow any prompts. If asked for an ssh passphrase, hit return (for no passphrase).
 5. If necessary, wait for Datalab to finishing launching. Datalab is ready when you see a message prompting you to do a **Web Preview**.
 6. Click on **Web Preview** icon on the top-right corner of the Cloud Shell ribbon. Click **Change Port** and enter the port `8081` and click **Change and Preview**.
-    ![](../../../res/img/GoogleML/GoogleML-5L-6.png)
-    ![](../../../res/img/GoogleML/GoogleML-5L-7.png)
-    ![](../../../res/img/GoogleML/GoogleML-5L-8.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-6.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-7.png)
+    ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-8.png)
     * **Note:** If the cloud shell used for running the datalab command is closed or interrupted, the connection to your Cloud Datalab VM will terminate. If that happens, you may be able to reconnect using the command `datalab connect mydatalabvm` in your new Cloud Shell.
   
 ---
@@ -152,10 +152,10 @@ To invoke a BigQuery query:
     without_extremes = df.drop(['0%', '100%'], 1)
     without_extremes.plot(x='departure_delay', xlim=(-30,50), ylim=(-50,50))
     ```
-        ![](../../../res/img/GoogleML/GoogleML-5L-9.png)
+        ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-9.png)
     * Suppose we were creating a machine learning model to predict the arrival delay of a flight. Do you think departure delay is a good input feature? Is this true at all ranges of departure delays?
     * **Hint:** Try removing the xlim and ylim from the plotting command.
-        ![](../../../res/img/GoogleML/GoogleML-5L-10.png)
+        ![](../../../res/img/Coursera/GoogleML/GoogleML-5L-10.png)
 
 ---
 ## Cleanup
