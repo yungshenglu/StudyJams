@@ -1,6 +1,6 @@
-# Lab 1: Writing Low-level TensorFlow Programs
+# Lab 3: Scaling up TensorFlow Ingest Using Batching
 
-> * Last Tested Date: DEC 05, 2018
+> * Last Tested Date: DEC 04, 2018
 > * Last Updated Date: JUL 01, 2019
 
 ## Overview
@@ -9,12 +9,11 @@ This lab is part of a lab series, where you go from exploring a taxicab dataset 
 
 ### What You Learn
 
-In this lab, you will learn how the TensorFlow Python API works:
+In this lab, you will learn how to:
 
-* Building a graph
-* Running a graph
-* Feeding values into a graph
-* Find area of a triangle using TensorFlow
+* Read from a potentially large file in batches
+* Do a wildcard match on filenames
+* Break the one-to-one relationship between inputs and features
 
 ---
 ## Setup
@@ -61,11 +60,10 @@ To clone the `training-data-analyst` notebook in your JupyterLab instance:
     ![](../../../res/img/Coursera/TensorFlow/TensorFlow-2L-7.png)
 
 ---
-## Getting Started with TensorFlow
+## Scaling up TensorFlow Ingest Using Batching
 
-1. In the notebook interface, navigate to `training-data-analyst > courses > machine_learning > deepdive > 03_tensorflow > labs` and open `a_tfstart.ipynb`.
+1. In the notebook interface, navigate to `training-data-analyst > courses > machine_learning > deepdive > 03_tensorflow > labs` and open `c_dataset.ipynb`.
 2. In the notebook interface, click on `Edit > Clear All Outputs` (click on `Edit`, then in the drop-down menu, select `Clear All Outputs`).
-    * Now read the narrative and execute each cell in turn.
 3. Compare to solution
     * In the parent level `03_tensorflow` folder (above `labs/`) there is the solution notebook with the same title for comparison.
 
