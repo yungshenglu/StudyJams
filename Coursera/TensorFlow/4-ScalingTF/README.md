@@ -29,7 +29,7 @@ For the rest of this course and specialization, any reference to Cloud ML Engine
     * Then, scale it out to GCP using serverless technology
 
 ---
-## Train a Model
+## Training a Model
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 

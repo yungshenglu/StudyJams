@@ -1,6 +1,6 @@
 # Estimator API
 
-In this module we will walk you through the Estimator API.
+In this module, we will walk you through the Estimator API.
 
 ## Introduction
 
@@ -214,7 +214,7 @@ In this module we will walk you through the Estimator API.
 * Please follow the details in [here](./Lab-2.md)
 
 ---
-## Train on Large Datasets with Dataset API
+## Training on Large Datasets with Dataset API
 
 > [![](https://img.youtube.com/vi/PZ9h_NIT0e4/0.jpg)](https://youtu.be/PZ9h_NIT0e4)
 

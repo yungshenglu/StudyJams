@@ -1,6 +1,6 @@
 # Introduction to TensorFlow
 
-> Course 2 of 5 in the [Machine Learning with TensorFlow on Google Cloud Platform Specialization](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp)
+> Course 3 of 5 in the [Machine Learning with TensorFlow on Google Cloud Platform Specialization](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp)
 
 We introduce low-level TensorFlow and work our way through the necessary concepts and APIs so as to be able to write distributed machine learning models. Given a TensorFlow model, we explain how to scale out the training of that model and offer high-performance predictions using Cloud Machine Learning Engine.
 
