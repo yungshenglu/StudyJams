@@ -424,7 +424,7 @@ This section of the module covers pre-processing and feature creation which are 
 ---
 ## Lab 4: Computing Time-windowed Features in Cloud Dataprep
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/It0nvkV_q5U/0.jpg)](https://youtu.be/It0nvkV_q5U)
+> [![](https://img.youtube.com/vi/P2wWp8hCmKg/0.jpg)](https://youtu.be/P2wWp8hCmKg)
 
 * Please follow the details in [here](./Lab-4.md)

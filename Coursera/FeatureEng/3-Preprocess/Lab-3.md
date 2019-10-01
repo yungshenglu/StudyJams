@@ -162,7 +162,6 @@ In this lab, you:
 * Identified Map and Reduce operations in the Dataflow pipeline
 
 ---
----
 ## End Your Lab
 
 1. When you have completed your lab, click `End Lab`. Qwiklabs removes the resources you’ve used and cleans the account for you.
