@@ -1,7 +1,7 @@
 # Lab 2: Simple Dataflow Pipeline
 
 > * Last Tested Date: DEC 05, 2018
-> * Last Updated Date: DEC 05, 2019
+> * Last Updated Date: DEC 05, 2018
 
 ## Overview
 

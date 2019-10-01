@@ -273,11 +273,85 @@ This section of the module covers pre-processing and feature creation which are 
         * Extracting parts of an input (e.g., fields of TableRow)
         * Converting one Java type to another
         * Calculating values from different parts of inputs
-
+* Python: Map vs. FlatMap
+    * Use Map for 1:1 relationship between input and output
+        ```python
+        'WordLength' >> beam.Map(lambda word: (word, len(word)))
+        ```
+    * FlatMap for non 1:1 relationships, usually with generator
+        ```python
+        def vowels(word):
+            for ch in word:
+                if ch in ['a', 'e', 'i', 'o', 'u']:
+                    yield ch
+        'WordVowels' >> beam.FlatMap(lambda word: vowels(word))
+        ```
+        * Java: Use `apply(ParDo)` for both cases
+    * Unlike Map, `beam.FlatMap` supports transformations that can gernerate any number of outputs for an input including zero outputs
+        * The transformations in `beam.FlatMap` can also be run in parallel by Dataflow
+* `GroupBy` operation is akin to shuffle
+    * In Dataflow, shuffle explicitly with a `GroupByKey`
+        * Create a Key-Value pair in a ParDo
+        * Then group by the key
+        ```python
+        cityAndZipcodes = p
+        | beam.Map(lambda address: (address[1], address[3]))
+        | beam.GroupByKay()
+        ```
+* `Combine.PerKey` is similar to the shuffle step in MapReduce, which lets you aggregate
+    * Can be applied to a PCollection of values:
+        ```python
+        totalAmount = salesAmount | Combine.globally(sum)
+        ```
+    * And also to a grouped Key-Value pair:
+        ```python
+        totalSalesPerPerson = salesRecords | Combine.perKey(sum)
+        ```
+    * Many built-in functions: `Sum`, `Mean`, etc.
 
 ### Quiz
 
-
+1. Which of these accurately describes the relationship between Apache Beam and Cloud Dataflow?
+    * A. Apache Beam is the API for data pipeline building in java or python and Cloud Dataflow is the implementation and execution framework.
+    * B. Cloud Dataflow is the proprietary version of the Apache Beam API and the two are not compatible
+    * C. Cloud Dataflow is the API for data pipeline building in java or python and Apache Beam is the implementation and execution framework.
+    * D. They are the same
+    > Answer: A.
+2. TRUE or FALSE: The Filter method can be carried out in parallel and autoscaled by the execution framework:
+    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-3-8.jpg)
+    * True
+    * False
+    > Answer: True.
+3. What is the purpose of a Cloud Dataflow connector?
+    ```java
+    .apply(TextIO.write().to(“gs://…”));
+    ```
+    * A. Connectors allow you to chain multiple data-processing steps together automatically so they process in parallel
+    * B. Connectors allow you to output the results of a pipeline to a specific data sink like Bigtable, Google Cloud Storage, flat file, BigQuery, and more...
+    * C. Connectors allow you to authenticate your pipeline as specific users who may have greater access to datasets
+    > Answer: B.
+4. Below you'll find a Cloud Dataflow preprocessing graph. Correctly identify the terms for A, B, and C.
+    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-3-9.jpg)
+    * A. A is a data stream, B are transformation steps, and C is a data source
+    * B. A is a data source, B are transformation steps, and C is a data sink
+    * C. A is a data stream, B are transformation steps, and C is a data sink
+    > Answer: B.
+5. To run a pipeline you need something called a ________
+    * A. runner
+    * B. pipeline
+    * C. executor
+    * D. Apache Beam
+    > Answer: A.
+6. Your development team is about to execute this code block. What is your team about to do?
+    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-3-10.jpg)
+   * A. We are compiling our Cloud Dataflow pipeline written in Python and are loading the outputs of the executed pipeline inside of Google Cloud Storage (gs://)
+   * B. We are preparing a staging area in Google Cloud Storage for the output of our Cloud Dataflow pipeline and will be submitting our BigQuery job with a later command
+   * C. We are compiling our Cloud Dataflow pipeline written in Java and are submitting it to the cloud for execution
+    > Answer: C. 
+7. TRUE or FALSE: A ParDo acts on all items at once (like a Map in MapReduce)
+    * True
+    * False
+    > Answer: False.
 
 ---
 ## Lab 2: Simple Dataflow Pipeline
@@ -290,17 +364,55 @@ This section of the module covers pre-processing and feature creation which are 
 ---
 ## Lab 3: MapReduce in Dataflow
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/AmrfULm-lAM/0.jpg)](https://youtu.be/AmrfULm-lAM)
+> [![](https://img.youtube.com/vi/volKYMXesTk/0.jpg)](https://youtu.be/volKYMXesTk)
 
-
+* Please follow the details in [here](./Lab-3.md)
 
 ---
 ## Preprocessing with Cloud Dataprep
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/G4SvQExyoAI/0.jpg)](https://youtu.be/G4SvQExyoAI)
 
-
+* Exploring and knowing your data is essential
+    * Explore and visualize common values
+    * Analyze key statistics (e.g., min, max, avg, stddev)
+    * Explore the distribution
+    * Collaborate with domain experts
+* There are two general approaches to designing preprocessing
+    * Approach 1
+        1. Explore in Cloud Datalab
+            * Example of exploring in Datalab: Is there something wrong?
+                ![](../../../res/img/Coursera/FeatureEng/FeatureEng-3-11.png)
+            * Best to aggregate in BigQuery and plot in Datalab
+                ![](../../../res/img/Coursera/FeatureEng/FeatureEng-3-12.png)
+        2. Write code in BigQuery / Dataflow / TensorFlow to transform data
+            * Write Dataflow code to do any transformations
+                ![](../../../res/img/Coursera/FeatureEng/FeatureEng-3-13.png)
+    * Approach 2
+        1. Explore in Cloud Dataprep
+            * Cloud Dataprep supports the full preprocessing lifecycle
+                ![](../../../res/img/Coursera/FeatureEng/FeatureEng-3-14.png)
+        2. Design Recipe in UI to preprocess data
+            * In Dataprep, the flows are implemented as a sequence of recipes
+            * The recipe are data processing steps built from a library of so called **wranglers**
+            * Cloud Dataprep wranglers write beam code in Dataflow
+                1. Build Recipes in Cloud Dataprep UI
+                2. Dataprep Converts Recipes to Beam
+                3. Dataprep Runs a Dataflow Job
+        3. Apply generated Dataflow transformations to all data
+            * Wide array of transformation wranglers available
+                * Data Ingestion (Upload, GCS, BigQuery)
+                * Data Cleaning
+                * Agggregations
+                * Joins, Unions
+                * Transformations
+                * Type Conversions
+        4. Reuse Dataflow transformation in real-time pipeline
+            * Monitor Dataprep jobs and output results to BigQuery or GCS
+                * Track completed and ongoing jobs
+                * See the data quality metrics or transformed datasets
+                * View histograms with summary statistics for each field
 
 ### Quiz
 
@@ -315,3 +427,4 @@ This section of the module covers pre-processing and feature creation which are 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
+* Please follow the details in [here](./Lab-4.md)
