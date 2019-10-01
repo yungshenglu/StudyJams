@@ -20,7 +20,7 @@ Feature engineering is often the longest and most difficult phase of building yo
 
 * Objectives
     * Turn raw dat to features
-    * Compare good vs. bad features
+    * **Compare good vs. bad features**
     * Represent features
 * What makes a good feature?
     1. **Be related to the objective**
@@ -169,20 +169,85 @@ From the below list of available data fields, pick the *MOST* useful and the *LE
 
 > [![](https://img.youtube.com/vi/lxnkiMg5EFs/0.jpg)](https://youtu.be/lxnkiMg5EFs)
 
-
+* Objectives
+    * Turn raw dat to features
+    * Compare good vs. bad features
+    * **Represent features**
+* Raw data are converted to numeric features in different ways
+* Numeric values can be used as-is
+    * `numeric_column` is a type of feature column
+* Only specific attributes should be discarded
+* Categorical variables should be **one-hot** encoded
+    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2-1.png)
+* Don't know the list of keys? 
+    * Proprocess data to create a vocabulary of keys
+    * The vocabulary and the mapping of the vocabulary needs to be identical at prediction time
+* Options for encoding categorical data
+    * If you **know the keys** beforehand:
+        ```python
+        tf.feature_column.categorical_column_with_vocabulary_list(
+            'employeeId',
+            vocabulary_list=['8345', '72345', '87654', '98723', '23451']
+        )
+        ```
+    * If your data is **already indexed**; i.e., has integers in $[0-N)$:
+        ```python
+        tf.feature_column.categorical_column_with_identity(
+            'employeeId',
+            num_buckets=5
+        )
+        ```
+    * If you don't have a vocabulary of all possible values:
+        ```python
+        tf.feature_column.categorical_column_with_hash_bucket(
+            'employeeId',
+            hash_bucket_size=500
+        )
+        ```
+* **Don't mix magic numbers with data**
+    * If you have **missing data**, you need to have another column
+    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2-2.png)
 
 ### ML vs. Statictics
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/8Y9uflIbls8/0.jpg)](https://youtu.be/8Y9uflIbls8)
 
+* ML = Lots of data, **keep outlier** and build models for them
+* Statistics = "I've got all the data I'll ever get", **throw away outliers**
+* Exact floats are not meaningful
+    * Discretize floating point values into bins
+        ```python
+        lat = tf.feature_column.numeric_column('latitude')
+        dlat = tf.feature_column.bucketized_column(
+            lat, boundaries=np.arange(32, 42, 1).tolist()
+        )
+        ```
+* Crazy outliers will hurt trainability
+* Ideally, features should have a similar range
 
 ---
 ## Lab 1: Improve Model Accuracy with New Features
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/ddfhhFItqHM/0.jpg)](https://youtu.be/ddfhhFItqHM)
 
 * Please follow the details in [here](./Lab-1.md)
 
 ---
 ## Quiz: Representing Features
 
+1. What is one-hot encoding?
+    * A. One hot encoding is a process by which only the hottest numeric variable is retained for use by the neural network.
+    * B. One hot encoding is a process by which numeric variables are converted into a form that could be provided to neural networks to do a better job in prediction.
+    * C. One hot encoding is a process by which numeric variables are converted into a categorical form that could be provided to neural networks to do a better job in prediction.
+    * D. One hot encoding is a process by which categorical variables are converted into a form that could be provided to neural networks to do a better job in prediction.
+    > Answer: D.
+2. Which of these offers the best way to encode categorical data that is already indexed, i.e. has integers in $[0-N]$?
+    * A. `tf.feature_column.categorical_column_with_identity`
+    * B. `tf.feature_column.categorical_column_with_vocabulary_list`
+    * C. `tf.feature_column.categorical_column_with_hash_bucket`
+    > Answer: A.
+3. What do you use the `tf.feature_column.bucketized_column` function for?
+    * A. To discretize floating point values into a smaller number of categorical bins
+    * B. To compute the hash buckets needed to one-hot encode categorical values
+    * C. To count the number of unique buckets the input values falls into
+    > Answer: A.
