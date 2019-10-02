@@ -416,10 +416,26 @@ This section of the module covers pre-processing and feature creation which are 
 
 ### Quiz
 
-
+1. What are some of the advantages to exploring datasets with a UI tool like Cloud Dataprep?
+    * A. Dataprep uses Dataflow behind-the-scenes and you can create your transformations in a UI tool instead of writing Java or Python
+    * B. Dataprep allows for quick visual inspection of your dataset with accurate frequency histograms for every value in a column
+    * C. Dataprep has a number of transformation steps available that you can chain together as part of a recipe
+    * D. Dataprep supports outputting your data into BigQuery, Google Cloud Storage, or flat files
+    > Answer: A. C. E.
+2. TRUE or FALSE: You can automatically setup pipelines to run at defined intervals with Cloud Dataprep
+    * True
+    * False
+    > Answer: True
 
 ### Discussion Prompt: Performing Exploratory Analysis
 
+Pick a BigQuery public dataset from the list here: https://cloud.google.com/bigquery/public-data/ and read through the overview of the dataset and sample fields.
+
+Answer the three below questions:
+
+1. What are some of the fields you would explore first? Why?
+2. What types of transformations do you expect to have to perform?
+3. Are there any other datasets (existing or not) that you would potentially join with to enrich your data warehouse?
 
 ---
 ## Lab 4: Computing Time-windowed Features in Cloud Dataprep
