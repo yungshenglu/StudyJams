@@ -118,7 +118,7 @@ This section of the module covers pre-processing and feature creation which are 
         p.run()
     ```
 
-### Quiz
+### Module Quiz
 
 1. You are training a model to predict how long it will take to sell a house. The list price of the house, with numeric \$20,000 to \$500,000 values, is one of the inputs to the model. Which of these is a good practice?
     * A. Rescale the real valued feature like a price to a range from 0 to 1
@@ -309,7 +309,7 @@ This section of the module covers pre-processing and feature creation which are 
         ```
     * Many built-in functions: `Sum`, `Mean`, etc.
 
-### Quiz
+### Module Quiz
 
 1. Which of these accurately describes the relationship between Apache Beam and Cloud Dataflow?
     * A. Apache Beam is the API for data pipeline building in java or python and Cloud Dataflow is the implementation and execution framework.
@@ -414,7 +414,7 @@ This section of the module covers pre-processing and feature creation which are 
                 * See the data quality metrics or transformed datasets
                 * View histograms with summary statistics for each field
 
-### Quiz
+### Module Quiz
 
 1. What are some of the advantages to exploring datasets with a UI tool like Cloud Dataprep?
     * A. Dataprep uses Dataflow behind-the-scenes and you can create your transformations in a UI tool instead of writing Java or Python

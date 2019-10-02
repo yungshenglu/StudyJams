@@ -130,7 +130,7 @@ Feature engineering is often the longest and most difficult phase of building yo
 > [![](https://img.youtube.com/vi/_BoUJwle2zQ/0.jpg)](https://youtu.be/_BoUJwle2zQ)
 
 ---
-## Quiz: Raw Data to Features
+## Module Quiz
 
 1. What are the characteristics of a good feature?
     * A. Be in free-text format
@@ -233,7 +233,7 @@ From the below list of available data fields, pick the *MOST* useful and the *LE
 * Please follow the details in [here](./Lab-1.md)
 
 ---
-## Quiz: Representing Features
+## Module Quiz
 
 1. What is one-hot encoding?
     * A. One hot encoding is a process by which only the hottest numeric variable is retained for use by the neural network.

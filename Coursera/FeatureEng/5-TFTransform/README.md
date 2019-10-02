@@ -4,3 +4,42 @@ TensorFlow Transform (`tf.Transform`) is a library for preprocessing data with T
 
 ## Introduction
 
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
+
+---
+## TensorFlow Transform
+
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
+
+---
+## Analyze Phase
+
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
+
+---
+## Transform Phase
+
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
+
+---
+## Supporting Serving
+
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
+
+---
+## Lab 8: Exploring `tf.transform`
+
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
+* Please follow the details in [here](./Lab-8.md)
+
+---
+## Module Quiz
+
+
