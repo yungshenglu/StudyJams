@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab you will use the Tensorflow playground to develop an intuitive understanding of feature crosses. Click on these links and try to add new features while continuing to use a linear model.
+In this lab, you will use the Tensorflow playground to develop an intuitive understanding of feature crosses. Click on these links and try to add new features while continuing to use a linear model.
 
 ---
 ## TensorFlow Playground

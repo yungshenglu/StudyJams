@@ -1,6 +1,6 @@
 # Introducing 
 
-In traditional machine learning, feature crosses don’t play much of a role, but in modern day ML methods, feature crosses are an invaluable part of your toolkit.In this module, you will learn how to recognize the kinds of problems where feature crosses are a powerful way to help machines learn.
+In traditional machine learning, feature crosses don’t play much of a role, but in modern-day ML methods, feature crosses are an invaluable part of your toolkit. In this module, you will learn how to recognize the kinds of problems where feature crosses are a powerful way to help machines learn.
 
 ## Introduction
 

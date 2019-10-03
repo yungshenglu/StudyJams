@@ -1,6 +1,6 @@
 # Raw Data to Features
 
-Feature engineering is often the longest and most difficult phase of building your ML project. In the feature engineering process, you start with your raw data and use your own domain knowledge to create features that will make your machine learning algorithms work. In this module we explore what makes a good feature and how to represent them in your ML model.
+Feature engineering is often the longest and most difficult phase of building your ML project. In the feature engineering process, you start with your raw data and use your own domain knowledge to create features that will make your machine learning algorithms work. In this module, we explore what makes a good feature and how to represent them in your ML model.
 
 ## Introduction
 

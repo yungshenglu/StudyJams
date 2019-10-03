@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab, you will use the TensorFlow playground to develop an intuitive understanding of the limits of feature process.
+In this lab, you will use the TensorFlow playground to develop an intuitive understanding of the limits of the feature process.
 
 ---
 ## TensorFlow Playground
