@@ -53,6 +53,7 @@ To launch AI Platform Notebooks
         ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2L-4.png)
     * The new VM will take 2-3 minutes to start.
 3. Click `Open JupyterLab`. A JupyterLab window will open in a new tab.
+    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2L-5.png)
 
 ---
 ## Clone Course Repository within Your AI Platform Notebooks Instance

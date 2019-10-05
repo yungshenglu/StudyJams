@@ -189,7 +189,7 @@ TensorFlow Transform (`tf.Transform`) is a library for preprocessing data with T
     * A. You need to compute the vocabulary list for categorical columns from your training dataset
     * B. You want to invoke on-the-fly preprocessing for ML models based solely on the inputs to a model function as part of your graph
     * C. You want to scale your inputs based on min/max value in the dataset
-    *x D. You want to take a rolling-average of the number of cars at an intersection during the last hour
+    * D. You want to take a rolling-average of the number of cars at an intersection during the last hour
     > Answer: A. C.
 2. The Analyze phase of `tf.transform` is carried out via:
     * A. A TensorFlow program that contains Beam transforms
@@ -198,6 +198,6 @@ TensorFlow Transform (`tf.Transform`) is a library for preprocessing data with T
 3. The Transform phase of `tf.transform` is carried out via:
     * A. A Beam pipeline while creating a training or evaluation dataset
     * B. Inside a Beam pipeline for training and in TensorFlow during evaluation
-    *x C. Inside a Beam pipeline for evaluation and in TensorFlow during training
+    * C. Inside a Beam pipeline for evaluation and in TensorFlow during training
     * D. Inside a TensorFlow serving input function during prediction
-    > Answer: B.
+    > Answer: A. D.

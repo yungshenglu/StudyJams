@@ -1,16 +1,15 @@
-# Lab 8: Exploring `tf.transform`
+# Lab 3: Improve Model Accuracy by Hyperparameter Tuning with Cloud AI Platform
 
-> * Last Tested Date: DEC 06, 2018
-> * Last Updated Date: JUL 05, 2019
+> * Last Tested Date: DEC 07, 2018
+> * Last Updated Date: JUL 01, 2019
 
 ## Overview
 
-`tf.transform` allows users to define preprocessing pipelines and run these using large scale data processing frameworks, while also exporting the pipeline in a way that can be run as part of a TensorFlow graph
+This lab is part of a lab series, where you go from exploring a taxicab dataset to training and deploying a high-accuracy distributed model with Cloud AI Platform.
 
 ### What You Learn
 
-* Implement feature preprocessing and feature creation using `tf.transform`
-* Carry out feature processing efficiently, at scale and on streaming data
+In this lab, you will improve accuracy of a model by hyperparameter tuning with Cloud AI Platform
 
 ---
 ## Setup
@@ -21,7 +20,7 @@ For each lab, you get a new GCP project and set of resources for a fixed time at
     * There is no pause feature. You can restart if needed, but you have to start at the beginning.
 3. When ready, click `START LAB`
 4. Note your lab credentials. You will use them to sign in to Cloud Platform Console. 
-    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2L-1.png)
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-2L-6.png)
 5. Click `Open Google Console`.
 6. Click `Use another account` and copy/paste credentials for **this** lab into the prompts.
     * If you use other credentials, you'll get errors or **incur charges**.
@@ -31,9 +30,11 @@ For each lab, you get a new GCP project and set of resources for a fixed time at
 ---
 ## Create Storage Bucket
 
-1. In In your GCP Console, click on the **Navigation menu**, and select `Storage`.
+Create a bucket using the GCP console:
+
+1. In your GCP Console, click on the **Navigation menu**, and select Storage.
 2. Click on `Create bucket`.
-3. Choose a **Regional** bucket and set a unique name (use your project ID because it is unique). Then, click `Create`.
+3. Choose a `Regional` bucket and set a unique name (use your project ID because it is unique). Then, click `Create`.
 
 ---
 ## Launch AI Platform Notebooks
@@ -41,14 +42,14 @@ For each lab, you get a new GCP project and set of resources for a fixed time at
 To launch AI Platform Notebooks
 
 1. Click on the **Navigation Menu**. Navigate to `AI Platforms`, then to `Notebooks`.
-    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2L-2.png)
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-2L-7.png)
 2. On the Notebook instances page, click `+ NEW INSTANCE`. Select `TensorFlow 1.x`.
-    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2L-3.png)
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-2L-8.png)
     * In the pop-up, confirm the name of the deep learning VM and click `Create`.
-        ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2L-4.png)
+        ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-2L-9.png)
     * The new VM will take 2-3 minutes to start.
 3. Click `Open JupyterLab`. A JupyterLab window will open in a new tab.
-    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2L-5.png)
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-2L-10.png)
 
 ---
 ## Clone Course Repository within Your AI Platform Notebooks Instance
@@ -56,19 +57,26 @@ To launch AI Platform Notebooks
 To clone the `training-data-analyst` notebook in your JupyterLab instance:
 
 1. In JupyterLab, click the `Terminal` icon to open a new terminal.
-    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2L-6.png)
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-2L-11.png)
 2. At the command-line prompt, type in the following command and press `Enter`.
     ```bash
     $ git clone https://github.com/GoogleCloudPlatform/training-data-analyst 
     ```
 3. Confirm that you have cloned the repository by double clicking on the `training-data-analyst` directory and ensuring that you can see its contents. The files for all the Jupyter notebook-based labs throughout this course are available in this directory.
-    ![](../../../res/img/Coursera/FeatureEng/FeatureEng-2L-7.png)
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-2L-12.png)
 
 ---
-## Exploring `tf.transform`
+## Enable APIs
 
-1. In the notebook interface, navigate to `training-data-analyst > courses > machine_learning > deepdive > 04_features > taxifeateng` and open `tftransform.ipynb`.
+1. On the **Navigation menu**, click `APIs & services`.
+2. Scroll down and confirm that your APIs are enabled.
+    * If an API is missing, click `ENABLE APIS AND SERVICES` at the top, search for the API by name, and enable it for your project.
+    * [Cloud AI Platform](https://console.cloud.google.com/apis/library/ml.googleapis.com/?q=cloud%20ml%20engine)
 
+---
+## Hyperparameter Tuning
+
+1. In the notebook interface, navigate to `training-data-analyst > courses > machine_learning > deepdive > 05_artandscience > labs` and open `b_hyperparam.ipynb`.
 2. In the notebook interface, click on `Edit > Clear All Outputs` (click on `Edit`, then in the drop-down menu, select `Clear All Outputs`).
 
 ---

@@ -4,5 +4,12 @@ Course overview highlighting the key objectives and modules. First, you will lea
 
 ## Introduing Art and Science of Machine Learning
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/DpAMJHAkF2M/0.jpg)](https://youtu.be/DpAMJHAkF2M)
 
+* Objectives
+    * The Art of ML
+    * Hyperoarameter Tuning
+    * A Pinch of Science
+    * The Science of Neural Networks
+    * Embeddings
+    * Customer Estimator
