@@ -105,17 +105,6 @@ In this module, we will start to introduce the science along with the art of mac
         * Less emphasis on errors where the output is relatively close to the label
     * Regularization is important in logistic regression because driving the loss to zero is difficult and dangerous
         ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-4-6.png)
-
-### Quiz - Logistic Regression Regularization
-
-* Why is it important to add regularization to logistic regression?
-    * A. Helps stops weights being driven to +/- infinity
-    * B. Helps logits stay away from asymptotes which can halt training
-    * C. Transforms outputs into a calibrated probability estimate
-    * D. Both A & B
-    * E. Both A & C
-    > Answer: D.
-
 * Often we do both regularization and early stopping to counteract overfitting
     ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-4-7.png)
     * Early stopping is an approximate equivalent of L2 regularization
@@ -136,6 +125,16 @@ In this module, we will start to introduce the science along with the art of mac
     * Look for bias in slices of data, this can guide improvements
     * Example
         * Use calubration plots of bucketed bias to find slices where your model performs poorly
+
+### Quiz - Logistic Regression Regularization
+
+* Why is it important to add regularization to logistic regression?
+    * A. Helps stops weights being driven to +/- infinity
+    * B. Helps logits stay away from asymptotes which can halt training
+    * C. Transforms outputs into a calibrated probability estimate
+    * D. Both A & B
+    * E. Both A & C
+    > Answer: D.
 
 ### Quiz - Logistic Regression
 
