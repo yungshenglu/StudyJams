@@ -266,11 +266,11 @@ In this module, we will now be diving deep into the science, specifically with n
     * A. Increase the learning rate
     * B. Lower the learning rate
     > Answer: B.
-3. I am training a classification neural network with 5 hidden layers, sigmoid activation function, and [128, 64, 32, 16, 8] with learning_rate=0.05 and batch_size=32. I notice from TensorBoard that gradients in the third layer are near-zero. Is this a problem?
+3. I am training a classification neural network with 5 hidden layers, sigmoid activation function, and [128, 64, 32, 16, 8] with `learning_rate=0.05` and `batch_size=32`. I notice from TensorBoard that gradients in the third layer are near-zero. Is this a problem?
     * Yes
     * No
     > Answer: Yes.
-4. I am training a classification neural network with 5 hidden layers, sigmoid activation function, and [128, 64, 32, 16, 8] with learning_rate=0.05 and batch_size=32. I notice from TensorBoard that gradients in the third layer are near-zero. What would you try to fix this?
+4. I am training a classification neural network with 5 hidden layers, sigmoid activation function, and [128, 64, 32, 16, 8] with `learning_rate=0.05` and `batch_size=32`. I notice from TensorBoard that gradients in the third layer are near-zero. What would you try to fix this?
     * A. Add more layers to the DNN
     * B. Try using ReLU activation function
     * C. Increase the learning rate
@@ -279,11 +279,76 @@ In this module, we will now be diving deep into the science, specifically with n
 ---
 ## Multi-class Neural Networks
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/GbXX4o189vM/0.jpg)](https://youtu.be/GbXX4o189vM)
 
+* Logistic regression provides useful probabilities for binary-class problems
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-5-18.png)
+* There are lots of multi-class problems
+    * How do we extend the logits idea to multi-class classifiers?
+* Idea: Use separate output nodes for each possible class
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-5-19.png)
+* Add additional constraint, that total of outputs = 1.0
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-5-20.png)
+* Use one softmax loss for all possible classes
+    ```python
+    logits = tf.matmul(...)     # logits for each output node
+                                # -> shape = [batchSize, numClasses]
+    labels = ...                # ont-hot encoding in [0, numClasses)
+                                # -> shape = [batchSize, numClasses]
+    loss = tf.reduce_mean(
+        tf.nn.softmax_cross_entropy_with_logits_v2(
+            logits, labels      # shape = [batchSize]
+        )
+    )
+    ```
+    ```python
+    logits = tf.matmul(...)     # logits for each output node
+                                # -> shape = [batchSize, numClasses]
+    labels = ...                # ont-hot encoding in [0, numClasses)
+                                # -> shape = [batchSize, numClasses]
+    loss = tf.reduce_mean(
+        tf.nn.sparse_softmax_cross_entropy_with_logits(
+            logits, labels      # shape = [batchSize]
+        )
+    )
+    ```
+* Use softmax only when classes are **mutually exclusive**
+    * "Multi-class, single-label classification"
+    * An example may be a member of only one class
+        * Are there multi-class settings where examples may belong to more than one class?
+        ```python
+        tf.nn.sigmoid_cross_entropy_with_logits(logits, labels) # shape = [batchSize, numClasses]
+        ```
+* If you have hundreds or thousands of classes, loss computation can become a significant bottleneck
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-5-21.png)
+* Approxinate versions of softmax exist
+    * Candidate Sampling
+        * Calculate for all the positive labels, but only for a random sample of negatives
+        * `tf.nn.sampled_softmax_loss`
+    * Noise-contrastive
+        * Approximate the denominator of softmax by modeling the distribution of outputs
+        * `tf.nn.ncs_loss`
 
+### Quiz: Softmax
+
+* For our classification output, if we have both mutually exclusive labels and probabilities, we should use ______. If the labels are mutually exclusive, but the probabilities aren’t, we should use ______. If our labels aren’t mutually exclusive, we should use ______.
+1. tf.nn.sigmoid_cross_entropy_with_logits
+2. tf.nn.sparse_softmax_cross_entropy_with_logits
+3. tf.nn.softmax_cross_entropy_with_logits_v2
+    * A. III, II, I
+    * B. I, II, III
+    * C. III, I, II
+    * D. II, III, I
+    > Answer: 
 
 ---
 ## Module Quiz
 
-1. 
+1. If you have a classification problem with multiple labels, how does the neural network architecture change?
+    * A. Instead of a logistic layer, use a softmax layer
+    * B. Have a logistic layer for each label, and send the outputs of the logistic layer to a softmax layer
+    > Answer: B.
+2. If you have thousands of classes, computing the cross-entropy loss can be very slow. Which of these is a way to help address that problem?
+    * A. Use a noise-contrastive loss function
+    * B. Combine the categories hierarchically and train multi-stage neural networks
+    > Answer: A.
