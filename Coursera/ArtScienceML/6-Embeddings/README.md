@@ -141,9 +141,29 @@ In this module, you will learn how to use embeddings to manage sparse data, to m
 
 > [![](https://img.youtube.com/vi/N5E46YaCLK4/0.jpg)](https://youtu.be/N5E46YaCLK4)
 
-
+* Embeddings provide dimensionality reduction
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-6-15.png)
+    * We take the 784 numbers and we represent them as a sparse tensor
+        ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-6-16.png)
+* The result of embedding is such that similar items are close to each other
+* You can take advantage of this similarity property of embeddings
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-6-17.png)
+* A good starting point for number of embedding dimensions
+    ![](../../../res/img/Coursera/ArtScienceML/ArtScienceML-6-18.png)
 
 ---
 ## Module Quiz
 
-
+1. What does the word "embedding" mean in the context of Machine Learning?
+    * A. What that means is that you convert words into vectors. This allow you to do calculations on them and find similarities between them. Well-trained models with word embeddings have shown powerful understanding of the language.
+    * B. What that means is that you convert words into sequence models. This allow you to do calculations on them and find similarities between them. Well-trained models with word embeddings have shown powerful understanding of the language.
+    * C. What that means is that you convert Tensor vectors into words. This allow you to do calculations on them and find similarities between them. Well-trained models with word embeddings have shown powerful understanding of the language.
+    > Answer: A.
+2. Which of these statements are true?
+    * A. Creating embeddings can be the first step to solving a clustering problem
+    * B. Embeddings learned on one problem can be reused in another problem
+    * C. Embeddings can be learned directly from the data
+    * D. Embeddings can be used to project data to a lower dimensional representation
+    * E. Embeddings learned on one problem can be used as a starting point when training a related problem
+    * F. Embeddings require you to have labeled data
+    > Answer: A. B. C. D. E.
