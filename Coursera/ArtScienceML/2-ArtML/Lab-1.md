@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this lab, you will use TensorFlow playground to experiment with L1 and L2 regularisation and different values of Lambda also known as the regularisation rates.
+In this lab, you will use TensorFlow playground to experiment with L1 and L2 regularization and different values of Lambda also known as the regularization rates.
 
 ---
 ## TensorFlow Playground

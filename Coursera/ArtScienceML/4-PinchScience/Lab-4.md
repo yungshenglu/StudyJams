@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this L1 regularization lab, I had add in lots of spurious features and it created a fairly complex model. We're first going to train the model without L1 regularization, and then we will see if L1 regularization helps pulling the model down into a much more sparse, concise, and hopefully more generalizable form.
+In this L1 regularization lab, I had add in lots of spurious features and it created a fairly complex model. We're first going to train the model without L1 regularization, and then we will see if L1 regularization helps to pull the model down into a much more sparse, concise, and hopefully more generalizable form.
 
 ---
 ## TensorFlow Playground

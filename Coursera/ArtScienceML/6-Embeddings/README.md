@@ -1,6 +1,6 @@
 # Embeddings
 
-In this module, you will learn how to use embeddings to manage sparse data, to make machine learning models that use sparse data consume less memory and train faster. Embeddings are also a way to do dimensionality reduction, and in that way, make models simpler and more generalizable.
+In this module, you will learn how to use embeddings to manage sparse data, to make machine learning models that use sparse data to consume less memory and train faster. Embeddings are also a way to do dimensionality reduction, and in that way, make models simpler and more generalizable.
 
 ## Introduction
 

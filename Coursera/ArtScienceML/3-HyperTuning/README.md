@@ -1,6 +1,6 @@
 # Hyperparameter Tuning
 
-In this module, you will learn how to differentiate between parameters and hyperparameters. Then we’ll discuss traditional grid search approach and learn how to think beyond it with smarter algorithms. Finally you’ll learn how Cloud ML engine makes it so convenient to automate hyperparameter tuning.
+In this module, you will learn how to differentiate between parameters and hyperparameters. Then we’ll discuss traditional grid search approach and learn how to think beyond it with smarter algorithms. Finally, you’ll learn how Cloud ML engine makes it so convenient to automate hyperparameter tuning.
 
 ## Introduction
 
