@@ -23,9 +23,13 @@ This repository is some notes of [Google Cloud Study Jams 2019](https://events.w
 * [How Google does Machine Learning](Coursera/GoogleML/)
 * [Launching into Machine Learning](Coursera/LaunchML/)
 * [Introduction to TensorFlow](Coursera/TensorFlow/)
+* [Feature Engineering](Coursera/FeatureEng/)
+* [Art and Science of Machine Learning](Coursera/ArtScienceML/)
 
 ---
 ## Contributor
+
+> NOTICE: You can follow the contributing process [CONTRIBUTING.md](CONTRIBUTING.md) to join me. I am very welcome any issue!
 
 * [David Lu](https://github.com/yungshenglu)
 
