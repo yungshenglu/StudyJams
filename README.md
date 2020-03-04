@@ -1,6 +1,6 @@
-# Google Cloud Study Jams 2019
+# Google Cloud Study Jams
 
-This repository is some notes of [Google Cloud Study Jams 2019](https://events.withgoogle.com/cloud-studyjam/).
+This repository is some notes of [Google Cloud Study Jams](https://events.withgoogle.com/cloud-studyjam/).
 
 ---
 ## [ML Study Jam 機器學習培訓計劃 - 初級](https://events.withgoogle.com/ml-study-jam-basic-tw/)
@@ -8,10 +8,10 @@ This repository is some notes of [Google Cloud Study Jams 2019](https://events.w
 ![](res/img/studyjams-basic.png)
 
 * Basics
-    * [GCP Essentials](GCPEssentials/)
-    * [Deploy Applications](DeployApplications/)
+    * [GCP Essentials](GoogleCloudTraining/GCPEssentials/)
+    * [Deploy Applications](GoogleCloudTraining/DeployApplications/)
 * Machine Learning
-    * [Baseline: Data, ML, AI](Baseline/)
+    * [Baseline: Data, ML, AI](GoogleCloudTraining/Baseline/)
 
 ---
 ## [ML Study Jam 機器學習培訓計劃 - 進階](https://events.withgoogle.com/ml-study-jam-interm-tw/)
