@@ -42,12 +42,13 @@ We encourage you to check out the downloadable resources for videos. Some of our
 ![](../../../res/img/Coursera/CoreInfra/IntroGCP-1-1.png)
 
 ---
-## Welcome to GCP Fundamentals
+## Introducing Google Cloud Platform
+
+### Welcome to GCP Fundamentals
 
 > [![](https://img.youtube.com/vi/fchje5jsd98/0.jpg)](https://youtu.be/fchje5jsd98)
 
----
-## What is Cloud Computing?
+### What is Cloud Computing?
 
 > [![](https://img.youtube.com/vi/4U6P7jwZhkI/0.jpg)](https://youtu.be/4U6P7jwZhkI)
 
@@ -64,8 +65,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
 
 > Ref: [The NIST Definition of Cloud Computing](https://www.nist.gov/publications/nist-definition-cloud-computing)
 
----
-## How Did We Get Here?
+### How Did We Get Here?
 
 > [![](https://img.youtube.com/vi/PanZYEQR9ZA/0.jpg)](https://youtu.be/PanZYEQR9ZA)
 
@@ -78,13 +78,11 @@ We encourage you to check out the downloadable resources for videos. Some of our
     * Serverless
         * Fully automated
 
----
-## Every Company is a Data Company
+### Every Company is a Data Company
 
 > [![](https://img.youtube.com/vi/HjMU9HoOrpA/0.jpg)](https://youtu.be/HjMU9HoOrpA)
 
----
-## Practice Quiz: Cloud Computing Services
+### Practice Quiz: Cloud Computing Services
 
 1. Does a cloud computing service let you scale your resource use up and down?
     * a. Yes
@@ -95,28 +93,24 @@ We encourage you to check out the downloadable resources for videos. Some of our
     * b. No
     > Answer: b.
 
----
-## GCP Computing Architectures
+### GCP Computing Architectures
 
 > [![](https://img.youtube.com/vi/Ws48a3KkNUo/0.jpg)](https://youtu.be/Ws48a3KkNUo)
 
----
-## The Google Network
+### The Google Network
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
 * Google network: 100,000s of km of fiber cable, 8 subseas cables
 
----
-## GCP Regions and Zones
+### GCP Regions and Zones
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
 * Google Cloud Platform is organized into regions and zones
 * Google Cloud Platform's regions and zones around the world
 
----
-## Environmental Resposibility
+### Environmental Resposibility
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
@@ -125,8 +119,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
     * One if the world's largest corporate purchasers of remewable energy
     * First data centers to achieve ISO 14001 certification
 
----
-## Google Offers Customer-Friendly Pricing
+### Google Offers Customer-Friendly Pricing
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
@@ -142,8 +135,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
     * Custom VM instance types
         * Pay only for the resources you need for your application
 
----
-## Open APIs
+### Open APIs
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
@@ -152,8 +144,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
     * Open source for a rich ecosystem
     * Multi-vendor-friendly technologies
 
----
-## Practice: GCP Regions and Zones
+### Practice Quiz: GCP Regions and Zones
 
 1. Why might a GCP customer use resources in several zones within a region?
     * a. For improved fault tolerance
@@ -164,8 +155,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
     * b. To improve security
     > Answer: a.
 
----
-## Why Choose Google Cloud Platform
+### Why Choose Google Cloud Platform
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
@@ -195,8 +185,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
         * Speech API
         * Translate API
 
----
-## Multi-Layered Security Approach
+### Multi-Layered Security Approach
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
@@ -214,8 +203,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
     * Hardware infrastructure
         * Hardware design and provenance; secure boot stack; premises security
 
----
-## Budgets and Billing
+### Budgets and Billing
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
@@ -230,8 +218,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
         * Govern the number of resources you can have in your projects
     * Many quotas are changeable
 
----
-## Quiz: Introducing Google Cloud Platform
+### Quiz: Introducing Google Cloud Platform
 
 1. Choose fundamental characteristics of cloud computing. Mark all that are correct (4 correct responses).
     * a. Customers are required to commit to multi-year contracts
@@ -269,7 +256,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
     > Answer: a.
 6. What kind of customer benefits most from billing by the second for cloud resources such as virtual machines?
     * a. Customers who create and run many virtual machines
-    * b. Customers who create many virtual machines and leave them running for months x
-    * c. Customers who create too few virtual machines to get discounts x
+    * b. Customers who create many virtual machines and leave them running for months
+    * c. Customers who create too few virtual machines to get discounts
     * d. Customers who create virtual machines running commercially licensed operating systems
-    > Answer: 
+    > Answer: a.
