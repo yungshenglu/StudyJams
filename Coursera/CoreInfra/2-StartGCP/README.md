@@ -151,10 +151,61 @@ GCP customers use projects to organize the resources they use. They use Google C
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
+* There are four ways to interact with GCP
+    * Cloud Platform Console
+        * Web user interface
+    * Cloud Shell and Cloud SDK
+        * Command-line interface
+    * Cloud Console Mobile App
+        * For iOS and Android
+    * REST-based API
+        * For custom applications
+* Google Cloud Platform Console
+    * Access to Google Cloud Platform APIs
+    * Offer access to Cloud Shell
+        * A temporary virtual machine with Google Cloud SDK preinstalled
+* Google Cloud SDK
+    * Includes command-line tools for Cloud Platform products and servies
+        * `gcloud`, `gsutil` (Cloud Storage), `bq` (BigQuery)
+    * Available via Cloud Shell 
+    * Available as Docker image
+* RESTful API
+    * Programmatic access to products and services
+        * Typically use JSON as an interchange format
+        * Use OAuth 2.0 for authentication and authorization
+    * Enabled through the Google Cloud Platform
+    * Most APIs include daily quotas and rates (limits) that can be raised by request
+        * Important to plan ahead tp manage your required capacity
+    * Experiment with APIs Explorer
+* Use APIs Explorer to help you write down your code
+    * The APIs Explorer is an interactive tool that lets you easily try Google APIs using a browser
+    * With the APIs Explorer, you can:
+        * Browse quickly through available APIs and versions
+        * See methods available for each API and what parameters they support along with inline document
+        * Execute requests for any method and see responses in real time
+        * Easily make authenticated and authorized API calls
+* Use client libraries to control GCP resources from within your code
+    * Cloud Client Libraries
+        * Community-owned, hand-crafted client libraries
+    * Google API client Libraries
+        * Open source, generated
+        * Support various language
+            * Java, Python, JavaScript, PHP, .NET, Go, Node.js, Ruby, Objective-C, Dart
+* Google Console Mobile App
+    * Manage virtual machines and database instances
+    * Manage apps in Google App Engine
+    * Manage your billing
+    * Visualize your projects with a customizable dashboard
+
 ---
 ## Cloud Marketplace (formerly Cloud Launcher)
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
+* Cloud Lanchergives quick access to solutions
+    * A solution marketplace containing pre-packaged, ready-to-deploy solution
+        * Some offered by Google
+        * Others by third-party vendors
 
 ---
 ## Demostration
