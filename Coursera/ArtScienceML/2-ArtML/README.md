@@ -64,7 +64,6 @@ In this course, you will learn about The Art of Machine Learning. We will review
 ## Lab 1: Regularization
 
 > [![](https://img.youtube.com/vi/jzYbV2K72XY/0.jpg)](https://youtu.be/jzYbV2K72XY)
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
 * Please follow the details in [here](./Lab-1.md)
 

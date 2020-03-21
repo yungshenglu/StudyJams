@@ -206,22 +206,60 @@ GCP customers use projects to organize the resources they use. They use Google C
     * A solution marketplace containing pre-packaged, ready-to-deploy solution
         * Some offered by Google
         * Others by third-party vendors
+* GCP updates the base images for these software packages to fix critical issues and vulnerabilities
+    * But it doesn't update the software after it's been deployed. 
+    * Fortunately, you'll have access to the deployed systems, so you can maintain them.
 
 ---
-## Demostration
-
-### Demostration: Getting Started with Google Launcher
+## Lab 1: Getting Started with Google Launcher
 
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
-
-### Getting Started with Google Cloud Platform and Qwiklabs
-
 > [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
----
-## Lab 1: Getting Started with Cloud Marketplace
-
+* Please follow the details in [here](./Lab-1.md)
 
 ---
 ## Quiz: Getting Started with Google Cloud Platform
 
+1. (T/F) In Google Cloud IAM: if a policy applied at the project level gives you Owner permissions, your access to an individual resource in that project might be restricted to View permission if someone applies a more restrictive policy directly to that resource.
+    > Answer: False.
+2. (T/F) All Google Cloud Platform resources are associated with a project.
+    > Answer: True.
+3. Service accounts are used to provide which of the following? (Choose all that are correct. Choose 3 responses.)
+    * a. Authentication between Google Cloud Platform services
+    * b. A way to restrict the actions a resource (such as a VM) can perform
+    * c. A way to allow users to act with service account permissions
+    * d. A set of predefined permissions
+    > Answer: a. b. c.
+4. How do GCP customers and Google Cloud Platform divide responsibility for security?
+    * a. Google takes care of the lower parts of the stack, and customers are responsible for the higher parts.
+    * b. All aspects of security are the customer's responsibility.
+    * c. Google takes care of the higher parts of the stack, and customers are responsible for the lower parts.
+    * d. All aspects of security are Google's responsibility. x
+    > Answer: a.
+5. Which of these values is globally unique, permanent, and unchangeable, but chosen by the customer?
+    * a. The project number
+    * b. The project's billing credit-card number
+    * c. The project ID
+    * d. The project name
+    > Answer: c.
+6. Consider a single hierarchy of GCP resources. Which of these situations is possible? (Choose all that are correct. Choose 3 responses.)
+    * a. There is no organization node, but there is at least one folder.
+    * b. There is an organization node, and there are no folders.
+    * c. There are two or more organization nodes x
+    * d. There is no organization node, and there are no folders.
+    * e. There is an organization node, and there is at least one folder.
+    > Answer: b. e.
+7. What is the difference between IAM primitive roles and IAM predefined roles?
+    * a. Primitive roles affect all resources in a GCP project. Predefined roles apply to a particular service in a project.
+    * b. Primitive roles are changeable once assigned. Predefined roles can never be changed.
+    * c. Primitive roles only apply to the owner of the GCP project. Predefined roles can be associated with any user.
+    * d. Primitive roles can only be granted to single users. Predefined roles can be associated with a group.
+    * e. Primitive roles only allow viewing, creating, and deleting resources. Predefined roles allow any modification.
+    > Answer: a.
+8. Which statement is true about billing for solutions deployed using Cloud Marketplace (formerly known as Cloud Launcher)?
+   * a. You pay only for the underlying GCP resources you use, with the possible addition of extra fees for commercially licensed software.
+   * b. You pay only for the underlying GCP resources you use; Google pays the license fees for commercially licensed software. x
+   * c. Cloud Marketplace solutions are always free. x
+   * d. After a trial period, each Cloud Marketplace solution assesses a fixed recurring monthly fee.
+   > Answer:
