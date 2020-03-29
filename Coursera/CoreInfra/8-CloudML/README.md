@@ -12,30 +12,47 @@ GCP's big-data and machine learning offerings are intended to help customers get
 ---
 ## Module Introduction
 
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
 
 ---
 ## Google Cloud Big Data Platform
 
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
 
 ### Cloud Dataflow
+
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
 
 ### BigQuery
 
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
 
 ### Cloud Pub/Sub and Cloud Datalab
+
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
 
 ---
 ## Google Cloud Machine Learning Platform
 
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
 
 ### Machine Learning APIs
+
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
 
 
 ---
 ## Lab 7: Getting Started with BigQuery
 
+> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+
+* Please follow the details in [here](./Lab-7.md)
 
 ---
 ## Quiz: Big Data and Machine Learning

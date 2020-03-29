@@ -246,10 +246,10 @@ GCP customers use projects to organize the resources they use. They use Google C
 6. Consider a single hierarchy of GCP resources. Which of these situations is possible? (Choose all that are correct. Choose 3 responses.)
     * a. There is no organization node, but there is at least one folder.
     * b. There is an organization node, and there are no folders.
-    * c. There are two or more organization nodes x
+    * c. There are two or more organization nodes
     * d. There is no organization node, and there are no folders.
     * e. There is an organization node, and there is at least one folder.
-    > Answer: b. e.
+    > Answer: b. d. e.
 7. What is the difference between IAM primitive roles and IAM predefined roles?
     * a. Primitive roles affect all resources in a GCP project. Predefined roles apply to a particular service in a project.
     * b. Primitive roles are changeable once assigned. Predefined roles can never be changed.
@@ -259,7 +259,7 @@ GCP customers use projects to organize the resources they use. They use Google C
     > Answer: a.
 8. Which statement is true about billing for solutions deployed using Cloud Marketplace (formerly known as Cloud Launcher)?
    * a. You pay only for the underlying GCP resources you use, with the possible addition of extra fees for commercially licensed software.
-   * b. You pay only for the underlying GCP resources you use; Google pays the license fees for commercially licensed software. x
-   * c. Cloud Marketplace solutions are always free. x
+   * b. You pay only for the underlying GCP resources you use; Google pays the license fees for commercially licensed software.
+   * c. Cloud Marketplace solutions are always free.
    * d. After a trial period, each Cloud Marketplace solution assesses a fixed recurring monthly fee.
-   > Answer:
+   > Answer: a.

@@ -82,7 +82,7 @@ Compute Engine lets you run virtual machines on Google’s global infrastructure
         * Even across sub-networks and even between GCP zones without requiring an external IP address.
         * VPCs routing tables are built in, you don't have to provision or manage a router.
     * Use its firewall to control what network traffic is allowed
-    * Use Sharedd VPC to share a netwrok or individual subnets, with other GCP projects
+    * Use Shared VPC to share a netwrok or individual subnets, with other GCP projects
         * VPCs belong to GCP projects
     * Use VPC Peering to interconnect networks in GCP projects
 * With global Cloud Load Balancing, your application presents a single front-end to the world
@@ -117,4 +117,49 @@ Compute Engine lets you run virtual machines on Google’s global infrastructure
 
 ---
 ## Quiz: Google Compute Engine and Networking
+
+1. (T/F) Google Cloud Load Balancing allows you to balance HTTP-based traffic across multiple Compute Engine regions.
+    > Answer: True.
+    > Explanation: Correct! With global Cloud Load Balancing, your application presents a single front-end to the world.
+2. Which statement is true about Google VPC networks and subnets?
+    * a. Networks are global; subnets are zonal
+    * b. Networks and subnets are global
+    * c. Networks are global; subnets are regional
+    * d. Networks are regional; subnets are zonal
+    > Answer: c.
+3. An application running in a Compute Engine virtual machine needs high-performance scratch space. Which type of storage meets this need?
+    * a. Local standard
+    * b. SSD persistent
+    * c. Standard persistent
+    * d. Local SSD
+    > Answer: d.
+4. Choose an application that would be suitable for running in a Preemptible VM.
+    * a. A batch job that cannot be checkpointed and restarted
+    * b. A batch job that can be checkpointed and restarted
+    * c. An online relational database
+    * d. An interactive website
+    > Answer: b.
+5. How do Compute Engine customers choose between big VMs and many VMs?
+    * a. Use big VMs for in-memory databases and CPU-intensive analytics; use many VMs for fault tolerance and elasticity
+    * b. Use big VMs for fault tolerance and elasticity; use many VMs for in-memory databases and CPU-intensive analytics
+    > Answer: a.
+6. How do VPC routers and firewalls work?
+    * a. They are managed by Google as a built-in feature.
+    * b. Customers provision virtual machines and run their routers and firewalls in them.
+    * c. They are managed by Google in virtual machines, which customers may tune or turn off.
+    * d. They are managed by Google in virtual machines, which customers may never modify.
+    > Answer: a.
+7. A GCP customer wants to load-balance traffic among the back-end VMs that form part of a multi-tier application. Which load-balancing option should this customer choose?
+    * a. The global HTTP(S) load balancer
+    * b. The global TCP proxy
+    * c. The regional load balancer
+    * d. The regional internal load balancer
+    * e. The global SSL proxy
+    > Answer: d.
+8. For which of these interconnect options is a Service Level Agreement available?
+    * a. Carrier Peering
+    * b. VPNs with Cloud Router
+    * c. Direct Peering
+    * d. Dedicated Interconnect
+    > Answer: d.
 
