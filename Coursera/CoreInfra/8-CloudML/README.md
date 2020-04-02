@@ -12,7 +12,7 @@ GCP's big-data and machine learning offerings are intended to help customers get
 ---
 ## Module Introduction
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/hzxHgMBeI3k/0.jpg)](https://youtu.be/hzxHgMBeI3k)
 
 * Google believes that in the future, every company will be a data company. 
     * Because making the fastest and best use of data is a critical source of competitive advantage. 
@@ -22,7 +22,7 @@ GCP's big-data and machine learning offerings are intended to help customers get
 ---
 ## Google Cloud Big Data Platform
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/eyYFayHaVzc/0.jpg)](https://youtu.be/eyYFayHaVzc)
 
 * Google Cloud's big data services are fully managed and scalable
     * Cloud Dataproc
@@ -46,7 +46,7 @@ GCP's big-data and machine learning offerings are intended to help customers get
 
 ### Cloud Dataflow
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/eV3tUgk-keQ/0.jpg)](https://youtu.be/eV3tUgk-keQ)
 
 * Cloud Dataflow offers managed data pipelines
     * Processes data using Compute Engine instances
@@ -63,7 +63,7 @@ GCP's big-data and machine learning offerings are intended to help customers get
 
 ### BigQuery
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/O71ZtCpT33A/0.jpg)](https://youtu.be/O71ZtCpT33A)
 
 * BigQuery is fully managed data warehouse
     * Provides near real-time interactive analysis of massive datasets (hundreds of TBs) using SQL syntax (SQL 2011)
@@ -75,7 +75,7 @@ GCP's big-data and machine learning offerings are intended to help customers get
 
 ### Cloud Pub/Sub and Cloud Datalab
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/ZKfYB0xTFTA/0.jpg)](https://youtu.be/ZKfYB0xTFTA)
 
 * Cloud Pub/Sub is scalable, reliable messaging
     * Supports many-to-many asynchronous messaging
@@ -96,7 +96,7 @@ GCP's big-data and machine learning offerings are intended to help customers get
 ---
 ## Google Cloud Machine Learning Platform
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/D8zJNRVnlmA/0.jpg)](https://youtu.be/D8zJNRVnlmA)
 
 * Machine Learning APIs enables apps that see, hear, and understand
 * Cloud Machine Learning Platform
@@ -123,7 +123,7 @@ GCP's big-data and machine learning offerings are intended to help customers get
 
 ### Machine Learning APIs
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/TApxKJm-h8U/0.jpg)](https://youtu.be/TApxKJm-h8U)
 
 * Cloud Vision API
     * Analyze images with a simple REST API
@@ -153,7 +153,7 @@ GCP's big-data and machine learning offerings are intended to help customers get
 ---
 ## Lab 7: Getting Started with BigQuery
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/tUn5axnJ0YE/0.jpg)](https://youtu.be/tUn5axnJ0YE)
 
 * Please follow the details in [here](./Lab-7.md)
 
