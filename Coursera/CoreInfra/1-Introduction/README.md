@@ -99,20 +99,20 @@ We encourage you to check out the downloadable resources for videos. Some of our
 
 ### The Google Network
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/Q_lf3ElFewU/0.jpg)](https://youtu.be/Q_lf3ElFewU)
 
 * Google network: 100,000s of km of fiber cable, 8 subseas cables
 
 ### GCP Regions and Zones
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/XMYKQJLMUAo/0.jpg)](https://youtu.be/XMYKQJLMUAo)
 
 * Google Cloud Platform is organized into regions and zones
 * Google Cloud Platform's regions and zones around the world
 
 ### Environmental Resposibility
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/nF6FEoHDw4o/0.jpg)](https://youtu.be/nF6FEoHDw4o)
 
 * Google is committed to environmental responsibility
     * 100% carbon neutral since 2007
@@ -121,7 +121,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
 
 ### Google Offers Customer-Friendly Pricing
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/-Bwfykvtce4/0.jpg)](https://youtu.be/-Bwfykvtce4)
 
 * Google offers customer-friendly pricing
     * Billing in sub-hour increments
@@ -137,7 +137,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
 
 ### Open APIs
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/CC8Cr3fG_vo/0.jpg)](https://youtu.be/CC8Cr3fG_vo)
 
 * Open APIs and open source mean customers can leave
     * Open APIs; compatibility with open-source services
@@ -157,7 +157,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
 
 ### Why Choose Google Cloud Platform
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/uycdqZqEii0/0.jpg)](https://youtu.be/uycdqZqEii0)
 
 * Google Cloud Platform enables develoers to **build, test, and deploy applications** on Google's highly secure, reliable, and scalable infrastructure
 * Review: Google Cloud Platform offers a range of compute services
@@ -187,7 +187,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
 
 ### Multi-Layered Security Approach
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/dSh7R9COE8w/0.jpg)](https://youtu.be/dSh7R9COE8w)
 
 * Security is designed into Google's technical infrastructure
     * Operational security
@@ -205,7 +205,7 @@ We encourage you to check out the downloadable resources for videos. Some of our
 
 ### Budgets and Billing
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/dqQbxYpLzv0/0.jpg)](https://youtu.be/dqQbxYpLzv0)
 
 * Budgets and alerts keep your billing under control
 * Billing export allows you to store detailed billing information
