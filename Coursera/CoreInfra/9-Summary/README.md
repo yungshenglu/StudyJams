@@ -10,8 +10,8 @@ This module reviews the GCP services covered in this course and reminds learners
 
 ---
 ## Course Review
-
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+https://youtu.be/
+> [![](https://img.youtube.com/vi/an66o6xKGjc/0.jpg)](https://youtu.be/an66o6xKGjc)
 
 * Comparing compute options
     | | Compute Engine | Kubernetes Engine | App Engine Flex | App Engine Standard | Cloud Functions (Beta) |
@@ -111,7 +111,7 @@ This module reviews the GCP services covered in this course and reminds learners
 ---
 ## Next Steps
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/PcD4ilzg5-Q/0.jpg)](https://youtu.be/PcD4ilzg5-Q)
 
 * What's next in the Application Development track?
     * Cloud Infrastructure
