@@ -14,7 +14,7 @@ Popular tools for development, deployment, and monitoring just work in GCP. Cust
 ---
 ## Development in the Cloud
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/qqVRbVJNZQs/0.jpg)](https://youtu.be/qqVRbVJNZQs)
 
 * Cloud Source Repositories
     * Fully featured Git repositories hosted on Google Cloud Platform
@@ -34,7 +34,7 @@ Popular tools for development, deployment, and monitoring just work in GCP. Cust
 ---
 ## Deployment: Infrastructure as Code
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/euX84ofqevI/0.jpg)](https://youtu.be/euX84ofqevI)
 
 * Deployment Management
     * Provides repeatable deployment
@@ -51,7 +51,7 @@ Popular tools for development, deployment, and monitoring just work in GCP. Cust
 ---
 ## Monitoring: Proactive Instrumentation
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/MdTx1qfefzY/0.jpg)](https://youtu.be/MdTx1qfefzY)
 
 * Stackdriver is GCP's tool for monitoring, logging and diagnostics.
     * Monitoring
@@ -82,7 +82,7 @@ Popular tools for development, deployment, and monitoring just work in GCP. Cust
 ---
 ## Lab 6: Getting Started with Deployment Manager and Stackdriver
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/DmijmmRKCqg/0.jpg)](https://youtu.be/DmijmmRKCqg)
 
 * Please follow the details in [here](./Lab-6.md)
 
