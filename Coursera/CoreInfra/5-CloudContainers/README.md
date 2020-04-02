@@ -12,7 +12,7 @@ Containers are simple and interoperable, and they enable seamless, fine-grained 
 ---
 ## Containers, Kubernetes, and Kubernetes Engine
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/ZfHCx8t6RtY/0.jpg)](https://youtu.be/ZfHCx8t6RtY)
 
 * IaaS
     * Infrastructure as a service offering let you share compute resources with others by virtualizing the hardware.
@@ -36,7 +36,7 @@ Containers are simple and interoperable, and they enable seamless, fine-grained 
 ---
 ## Introduction to Kubernetes and GKE
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/VdSNRS07x1k/0.jpg)](https://youtu.be/VdSNRS07x1k)
 
 * Kubernetes Engine
     * Kubernetes is an open-source orchestrator for containers so you can better manage and scale your applications.
@@ -83,7 +83,7 @@ Containers are simple and interoperable, and they enable seamless, fine-grained 
 
 ### Introduction to Hybrid and Multi-Cloud Computing (Anthos)
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/DzHm371SxKc/0.jpg)](https://youtu.be/DzHm371SxKc)
 
 * Distributed systems housed on-premises is the traditional approach but it lacks flexibility and agility
     * Distributed systems housed on-premises are difficult to upgrade
@@ -135,8 +135,8 @@ Containers are simple and interoperable, and they enable seamless, fine-grained 
 ---
 ## Lab 4: Getting Started with Kubernetes Engine
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/_KCOaSTyPVE/0.jpg)](https://youtu.be/_KCOaSTyPVE)
+> [![](https://img.youtube.com/vi/LMRc8zAEXXo/0.jpg)](https://youtu.be/LMRc8zAEXXo)
 
 * Please follow the details in [here](./Lab-4.md)
 
