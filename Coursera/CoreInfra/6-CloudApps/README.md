@@ -14,7 +14,7 @@ App Engine is a Platform-as-a-Service ("PaaS") offering. The App Engine platform
 ---
 ## Module Introduction
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/VDZYRN3YnDk/0.jpg)](https://youtu.be/VDZYRN3YnDk)
 
 * Recall that a PaaS is a platform as a service. 
     * The App Engine platform manages the hardware and networking infrastructure required to run your code. 
@@ -37,7 +37,7 @@ App Engine is a Platform-as-a-Service ("PaaS") offering. The App Engine platform
 ---
 ## App Engine Standard Environment
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/lslj-wOQDek/0.jpg)](https://youtu.be/lslj-wOQDek)
 
 * App Engine standard environment
     * Easily deploy your applications
@@ -61,7 +61,7 @@ App Engine is a Platform-as-a-Service ("PaaS") offering. The App Engine platform
 ---
 ## App Engine Flexible Environment
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/vPdBeH1f6Ow/0.jpg)](https://youtu.be/vPdBeH1f6Ow)
 
 * App Engine flexible environment
     * Build and deploy containerized apps with a click
@@ -100,7 +100,7 @@ App Engine is a Platform-as-a-Service ("PaaS") offering. The App Engine platform
 ---
 ## Cloud Endpoints and Apigee Edge
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/YZ3hUOym1DM/0.jpg)](https://youtu.be/YZ3hUOym1DM)
 
 * Application Programing Interfaces hide detail, enforce contracts
 * Cloud Endpoints helps you create and maintain APIs
@@ -122,7 +122,7 @@ App Engine is a Platform-as-a-Service ("PaaS") offering. The App Engine platform
 ---
 ## Lab 5: Getting Started with App Engine
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/WXkhCOY5Ago/0.jpg)](https://youtu.be/WXkhCOY5Ago)
 
 * Please follow the details in [here](./Lab-5.md)
 
