@@ -12,7 +12,7 @@ GCP customers use projects to organize the resources they use. They use Google C
 ---
 ## Module Introduction
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/ktpC4MqSDns/0.jpg)](https://youtu.be/ktpC4MqSDns)
 
 * Projects are the main may you organize the resources you use in GCP
 * The principle of least privilege is very important in managing any kind of compute infrastructure, whether it's in the Cloud or on-premises.
@@ -26,7 +26,7 @@ GCP customers use projects to organize the resources they use. They use Google C
 ---
 ## The Google Cloud Platform Resource Hierarchy
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/tD2-Mop2ql8/0.jpg)](https://youtu.be/tD2-Mop2ql8)
 
 * Resource hierarchy levels define trust boundaries
     * Group your resources according to your organization structure
@@ -81,7 +81,7 @@ GCP customers use projects to organize the resources they use. They use Google C
 ---
 ## Identity and Access Management (IAM)
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/Plf-28PO_Qw/0.jpg)](https://youtu.be/Plf-28PO_Qw)
 
 * IAM lets administrators authorize who can take action on specific resources
 * Google Cloud Identity and Access Management defines...
@@ -106,7 +106,7 @@ GCP customers use projects to organize the resources they use. They use Google C
 
 ### IAM Roles
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/fdEA1Arliw4/0.jpg)](https://youtu.be/fdEA1Arliw4)
 
 * IAM predefined roles offer more fine-grained permissions on particular services
     * You have to decide to use custom roles. You'll need to manage their permissions. Some companies decide they'd rather stick with the predefined roles. 
@@ -149,7 +149,7 @@ GCP customers use projects to organize the resources they use. They use Google C
 ---
 ## Interacting with Google Cloud Platform
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/SO96xvtDuUc/0.jpg)](https://youtu.be/SO96xvtDuUc)
 
 * There are four ways to interact with GCP
     * Cloud Platform Console
@@ -200,7 +200,7 @@ GCP customers use projects to organize the resources they use. They use Google C
 ---
 ## Cloud Marketplace (formerly Cloud Launcher)
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/ixTjuUkJ0HM/0.jpg)](https://youtu.be/ixTjuUkJ0HM)
 
 * Cloud Lanchergives quick access to solutions
     * A solution marketplace containing pre-packaged, ready-to-deploy solution
@@ -213,8 +213,8 @@ GCP customers use projects to organize the resources they use. They use Google C
 ---
 ## Lab 1: Getting Started with Google Launcher
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/0dt089ObA68/0.jpg)](https://youtu.be/0dt089ObA68)
+> [![](https://img.youtube.com/vi/HWV6iDu4IC4/0.jpg)](https://youtu.be/HWV6iDu4IC4)
 
 * Please follow the details in [here](./Lab-1.md)
 
