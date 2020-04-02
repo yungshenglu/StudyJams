@@ -12,7 +12,7 @@ Every application needs to store data. Different applications and workloads requ
 ---
 ## Module Introduction
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/6XWGhu1mPac/0.jpg)](https://youtu.be/6XWGhu1mPac)
 
 * Core storage options
     * Cloud Storage
@@ -24,7 +24,7 @@ Every application needs to store data. Different applications and workloads requ
 ---
 ## Cloud Storage
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/IAU5A0_mhFE/0.jpg)](https://youtu.be/IAU5A0_mhFE)
 
 * Cloud Storage
     * You save to your storage here, you keep this arbitrary bunch of bytes I give you and the storage lets you address it with a unique key. 
@@ -66,7 +66,7 @@ Every application needs to store data. Different applications and workloads requ
 
 ### Cloud Storage Interactions
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/MKorUHd2tGs/0.jpg)](https://youtu.be/MKorUHd2tGs)
 
 * Choosing among Cloud Storage classes
     | | Multi-regional | Regional | Nearline | Coldline |
@@ -112,7 +112,7 @@ Every application needs to store data. Different applications and workloads requ
 ---
 ## Cloud Bigtable
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/JhUC06wpAsw/0.jpg)](https://youtu.be/JhUC06wpAsw)
 
 * Cloud Bigtable is managed NoSQL
     * Fully managed NoSQL, wide-column database service for terabyte applications
@@ -146,7 +146,7 @@ Every application needs to store data. Different applications and workloads requ
 ---
 ## Cloud SQL and Cloud Spanner
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/l4E_FaEwzmQ/0.jpg)](https://youtu.be/l4E_FaEwzmQ)
 
 * Cloud SQL is a managed RDBMS
     * Offers MySQL and PostgreSQLBeta databases as a service
@@ -190,7 +190,7 @@ Every application needs to store data. Different applications and workloads requ
 ---
 ## Cloud Datastore
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/qhneVMLcuAY/0.jpg)](https://youtu.be/qhneVMLcuAY)
 
 * Cloud Datastore is a horizontally scalable NoSQL DB
     * Designed for application backends
@@ -213,7 +213,7 @@ Every application needs to store data. Different applications and workloads requ
 ---
 ## Comparing Storage Options
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/ZG-6WYlgaKU/0.jpg)](https://youtu.be/ZG-6WYlgaKU)
 
 * Comparing storage options: technical details
     | | Cloud Datastore | Bigtable | Cloud Storage | Cloud SQL | Cloud Spanner | BiqQuery |
@@ -229,7 +229,7 @@ Every application needs to store data. Different applications and workloads requ
 ---
 ## Lab 3: Getting Started with Cloud Storage and Cloud SQL
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/KHqYEYOLozk/0.jpg)](https://youtu.be/KHqYEYOLozk)
 
 * Please follow the details in [here](./Lab-3.md)
 
