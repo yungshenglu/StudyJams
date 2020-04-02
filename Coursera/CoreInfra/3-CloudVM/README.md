@@ -12,12 +12,12 @@ Compute Engine lets you run virtual machines on Google’s global infrastructure
 ---
 ## Module Introduction
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/Xrkvo23K3Bc/0.jpg)](https://youtu.be/Xrkvo23K3Bc)
 
 ---
 ## Virtual Private Cloud (VPC) Network
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/vB87rvnKzOE/0.jpg)](https://youtu.be/vB87rvnKzOE)
 
 * Virtual Private Cloud Networking
     * Each VPC network is contained in a GCP project
@@ -38,7 +38,7 @@ Compute Engine lets you run virtual machines on Google’s global infrastructure
 ---
 ## Compute Engine
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/flYqss0k1TI/0.jpg)](https://youtu.be/flYqss0k1TI)
 
 * Compute Engine offers managed virtual machines
     * No upfront investment
@@ -75,7 +75,7 @@ Compute Engine lets you run virtual machines on Google’s global infrastructure
 ---
 ## Important VPC Capabilities
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/2APBfBj4F8A/0.jpg)](https://youtu.be/2APBfBj4F8A)
 
 *  You control the topology of your VPC network
     * Use its route table of forward traffic within the network, even across subnets
@@ -111,7 +111,7 @@ Compute Engine lets you run virtual machines on Google’s global infrastructure
 ---
 ## Lab 2: Getting Started with Compute Engine
 
-> [![](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+> [![](https://img.youtube.com/vi/1KMu0Z3XdXw/0.jpg)](https://youtu.be/1KMu0Z3XdXw)
 
 * Please follow the details in [here](./Lab-2.md)
 
