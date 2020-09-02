@@ -52,7 +52,7 @@ To complete this lab, you need:
     ![](../../../res/img/setup/Setup-1.png)
 2. Copy the username, and then click `Open Google Console`. The lab spins up resources, and then opens another tab that shows the **Choose an account** page.
     * **Tip:** Open the tabs in separate windows, side-by-side.
-3. On the Choose an account page, click `Use Another Account`.
+3. On the **Choose an account** page, click `Use Another Account`.
     ![](../../../res/img/setup/Setup-2.png)
 4. The Sign in page opens. Paste the username that you copied from the Connection Details panel. Then copy and paste the password.
     * **Important:** You must use the credentials from the Connection Details panel. Do not use your Qwiklabs credentials. If you have your own GCP account, do not use it for this lab (avoids incurring charges).
