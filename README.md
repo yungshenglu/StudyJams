@@ -1,17 +1,18 @@
 # Google Cloud Study Jams
 
-This repository is some notes of [Google Cloud Study Jams](https://events.withgoogle.com/cloud-studyjam/).
+This repository is my personal notes of [Google Cloud Study Jams](https://events.withgoogle.com/cloud-studyjam/).
 
 ---
 ## [ML Study Jam 機器學習培訓計劃 - 初級](https://events.withgoogle.com/ml-study-jam-basic-tw/)
 
-![](res/img/studyjams-basic.png)
+![](res/img/studyjams-basic.gif)
 
 * Basics
     * [GCP Essentials](GoogleCloudTraining/GCPEssentials/)
     * [Deploy Applications](GoogleCloudTraining/DeployApplications/)
 * Machine Learning
     * [Baseline: Data, ML, AI](GoogleCloudTraining/Baseline/)
+    * [Machine Learning APIs](GoogleCloudTraining/MachineLearningAPIs)
 
 ---
 ## [ML Study Jam 機器學習培訓計劃 - 進階](https://events.withgoogle.com/ml-study-jam-interm-tw/)
