@@ -118,12 +118,12 @@ You will now explore the [API library](https://console.cloud.google.com/apis/lib
 
 Answer the following multiple choice questions to reinforce your understanding of the concepts covered so far.
 
-* 0: Offers quick access, documentation, and configuration options for 200+ Google APIs.
+* 3: Offers quick access, documentation, and configuration options for 200+ Google APIs.
     1. Google Cloud Project
     2. API Dashboard
     3. API Library
     4. Dialogflow
-* 0: Details your project's usage of specific APIs, including traffic levels, error rates, and even latencies.
+* 2: Details your project's usage of specific APIs, including traffic levels, error rates, and even latencies.
     1. Google Cloud Project
     2. API Dashboard
     3. API Library
@@ -162,12 +162,12 @@ Although there are hundreds of APIs out there, all with their own unique purpose
 
 Answer the following multiple choice questions to reinforce your understanding of the concepts covered so far.
 
-* 0: A computing device (e.g. a smartphone, laptop, etc.) that makes a request for some computing resource or data.
+* 3: A computing device (e.g. a smartphone, laptop, etc.) that makes a request for some computing resource or data.
     1. Web-based API
     2. Client-server model
     3. Client
     4. Server
-* 0: An HTTP method commonly used for creating new resources.
+* 1: An HTTP method commonly used for creating new resources.
     1. POST
     2. PUT
     3. DELETE
@@ -176,7 +176,7 @@ Answer the following multiple choice questions to reinforce your understanding o
 ---
 ## Endpoints
 
-APIs use HTTP methods to interact with data or computing services hosted on a server. These methods are useless if there isn't a way to access specific resources with consistency. APIs utilize communication channels called endpoints so that clients can access the resources they need without complication or irregularity.
+APIs use HTTP methods to interact with data or computing services hosted on a server. These methods are useless if there isn't a way to access specific resources with consistency. **APIs utilize communication channels called *endpoints* so that clients can access the resources they need without complication or irregularity.**
 
 **Endpoints** are access points to data or computing resources hosted on a server and they take the form of an [HTTP URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier). Endpoints are added to an API's base URL (e.g. `http://example.com`) to create a path to a specific resource or container of resources. The following are some examples of endpoints:
 
@@ -199,7 +199,7 @@ Since the backend is where all of the heavy lifting takes place, it could be sai
 ---
 ## RESTful APIs
 
-APIs that utilize the HTTP protocol, request methods, and endpoints are referred to as **RESTful APIs**. REST (Representational State Transfer) is an architectural style that prescribes standards for web-based communication. The Google [description of a RESTful system](https://developers.google.com/photos/library/guides/about-restful-apis):
+APIs that utilize the HTTP protocol, request methods, and endpoints are referred to as **RESTful APIs**. **REST (Representational State Transfer) is an architectural style that prescribes standards for web-based communication.** The Google [description of a RESTful system](https://developers.google.com/photos/library/guides/about-restful-apis):
 
 > ...resources are stored in a data store; a client sends a request that the server perform a particular action (such as creating, retrieving, updating, or deleting a resource), and the server performs the action and sends a response, often in the form of a representation of the specified resource.
 
@@ -294,17 +294,17 @@ JSON validators like [jsonlint](https://jsonlint.com/) or, if you use Chrome as 
 
 Answer the following multiple choice questions to reinforce your understanding of the concepts covered so far.
 
-* 0: Access points to data or computing resources hosted on a server and they take the form of an HTTP URI.
+* 1: Access points to data or computing resources hosted on a server and they take the form of an HTTP URI.
     1. Endpoint
     2. HTTP protocol
     3. Base URL
     4. Query string
-* 0: An architectural style that prescribes standards for web-based communication.
+* 4: An architectural style that prescribes standards for web-based communication.
     1. RESTful APIs
     2. Body
     3. Headers
     4. REST
-* 0: A file format that is lightweight, easy to read, and fast to parse.
+* 4: A file format that is lightweight, easy to read, and fast to parse.
     1. Object
     2. Array
     3. Java
